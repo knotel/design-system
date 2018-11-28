@@ -30,20 +30,23 @@ const boxBorder = props => ({
 
 const Card = styled(Box)`
   ${boxShadow} ${boxBorder} ${borderRadius};
+  background-color: ${props => props.backgroundColor};
 `
 
 Card.propTypes = {
   boxShadowSize: PropTypes.oneOf(['sm', 'md', 'lg', 'xl']),
   borderColor: PropTypes.string,
   ...propTypes.borderRadius,
-  borderWidth: PropTypes.oneOf([1, 2])
+  borderWidth: PropTypes.oneOf([1, 2]),
+  backgroundColor: PropTypes.string
 }
 
 Card.defaultProps = {
   borderColor: 'gray300',
   borderRadius: 1,
   borderWidth: 1,
-  theme: theme
+  theme: theme,
+  backgroundColor: 'white'
 }
 
 Card.displayName = 'Card'

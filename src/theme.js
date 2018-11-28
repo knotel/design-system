@@ -95,24 +95,6 @@ const flatten = (name, colors) =>
     return { ...a, ...color }
   }, {})
 
-const warmColors = [
-  yellow,
-  lightOrange,
-  orange,
-  darkOrange,
-  darkPink,
-  crimsonRed,
-  darkPurple,
-  purple
-]
-
-const blues = [lightBlue, lightBlue, blue, blue]
-const grays = [gray50]
-const greens = [lightGreen, lightGreen, green, green]
-const reds = [lightRed, lightRed, red, red]
-const oranges = [lightOrange, lightOrange, orange, orange]
-const purples = [lightPurple, lightPurple, purple, purple]
-
 const colors = {
   yellow,
   lightOrange,
