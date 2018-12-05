@@ -2,9 +2,10 @@ import styled from 'styled-components'
 import { space, width, color, responsiveStyle } from 'styled-system'
 import PropTypes from 'prop-types'
 import theme from './theme'
+import { View } from 'react-primitives'
 
 const align = responsiveStyle('text-align', 'align')
-const Box = styled.div`
+const Box = styled(View)`
   ${space} ${width} ${color} ${align};
   box-sizing: border-box;
 `

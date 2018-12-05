@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import PropTypes from 'prop-types'
 import { fontSize, space, color, responsiveStyle } from 'styled-system'
 import theme from './theme'
+import { Text as TextPrimitive } from 'react-primitives'
 
 export const caps = props =>
   props.caps ? { textTransform: 'uppercase' } : null
@@ -24,7 +25,7 @@ export const italic = props => (props.italic ? { fontStyle: 'italic' } : null)
 
 const align = responsiveStyle('text-align', 'align')
 
-const Text = styled.div`
+const Text = styled(TextPrimitive)`
   ${italic} ${fontSize} ${space} ${color} ${caps} ${regular} ${medium} ${fontFamily} ${bold} ${align};
 `
 

@@ -5,6 +5,7 @@ import Box from './Box'
 import Icon from './Icon'
 import theme from './theme'
 import PropTypes from 'prop-types'
+import { Link } from 'react-primitives'
 
 const AppBar = styled(Flex)`
   border-bottom: 1px solid ${props => props.theme.colors.gray200};
@@ -31,13 +32,13 @@ export default class AppBarWrapper extends React.Component {
         inverse={this.props.inverse}
       >
         <Box>
-          <a href="/">
+          <Link href="/">
             <Icon
               name="knotelLogo"
               size={80}
               color={this.props.inverse ? theme.colors.white : this.props.color}
             />
-          </a>
+          </Link>
         </Box>
         <Flex>{this.props.children}</Flex>
       </AppBar>

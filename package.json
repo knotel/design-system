@@ -78,7 +78,10 @@
     "mapbox": "^1.0.0-beta10",
     "prop-types": "^15.5.10",
     "rc-slider": "^8.5.0",
+    "react-art": "^16.6.3",
     "react-map-gl": "^4.0.2",
+    "react-native-web": "^0.9.8",
+    "react-primitives": "^0.7.0",
     "styled-system": "^1.0.8"
   },
   "peerDependencies": {

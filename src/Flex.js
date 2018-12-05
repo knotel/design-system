@@ -9,9 +9,10 @@ import {
   flexDirection,
   propTypes
 } from 'styled-system'
+import { View } from 'react-primitives'
 import theme from './theme'
 
-const Flex = styled.div`
+const Flex = styled(View)`
   display: flex;
   ${space} ${width} ${color} ${alignItems} ${justifyContent} ${flexWrap} ${flexDirection};
 `
