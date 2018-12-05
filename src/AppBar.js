@@ -9,8 +9,10 @@ import PropTypes from 'prop-types'
 const AppBar = styled(Flex)`
   border-bottom: 1px solid ${props => props.theme.colors.gray200};
   height: 48px;
+  padding: 0px ${props => theme.space[2]}px;
   ${props => props.theme.mediaQueries['md']} {
     height: 60px;
+    padding: 0px ${props => theme.space[4]}px;
   }
   a {
     color: ${props =>
@@ -26,7 +28,6 @@ export default class AppBarWrapper extends React.Component {
         bg={this.props.inverse ? this.props.color : theme.colors.white}
         color={this.props.inverse ? theme.colors.white : theme.colors.text}
         justify="space-between"
-        px={4}
         inverse={this.props.inverse}
       >
         <Box>

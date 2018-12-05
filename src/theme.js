@@ -130,7 +130,7 @@ export { colors }
 
 // styled-system's `borderRadius` function can hook into the `radii` object/array
 export const radii = [0, 2, 6]
-export const radius = '2px'
+export const radius = '4px'
 
 export const maxContainerWidth = '1280px'
 
