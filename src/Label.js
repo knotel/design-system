@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import { space, fontSize, fontWeight, color, propTypes } from 'styled-system'
+import Text from './Text'
 import theme from './theme'
 
 const nowrap = props =>
@@ -19,7 +20,7 @@ const accessiblyHide = props =>
       }
     : null
 
-const Label = styled.label`
+const Label = styled(Text)`
   font-size: 10px;
   letter-spacing: 0.2px;
   display: block;

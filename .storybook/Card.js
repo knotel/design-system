@@ -1,6 +1,6 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
-import { Box, Card } from '../src'
+import { Box, Card, Text } from '../src'
 
 storiesOf('Card', module)
   .add('Box Shadows with default border', () => (
@@ -14,7 +14,7 @@ storiesOf('Card', module)
         bg="white"
         borderWidth={1}
       >
-        Small Shadow
+        <Text>Small Shadow</Text>
       </Card>
       <Card
         boxShadowSize="md"
@@ -25,7 +25,7 @@ storiesOf('Card', module)
         bg="white"
         borderWidth={1}
       >
-        Medium Shadow
+        <Text>Medium Shadow</Text>
       </Card>
       <Card
         boxShadowSize="lg"
@@ -36,7 +36,7 @@ storiesOf('Card', module)
         bg="white"
         borderWidth={1}
       >
-        Large Shadow
+        <Text>Large Shadow</Text>
       </Card>
       <Card
         boxShadowSize="xl"
@@ -47,7 +47,7 @@ storiesOf('Card', module)
         bg="white"
         borderWidth={1}
       >
-        XLarge Shadow
+        <Text>XLarge Shadow</Text>
       </Card>
     </Box>
   ))
@@ -62,7 +62,7 @@ storiesOf('Card', module)
         bg="white"
         borderWidth={2}
       >
-        Small Shadow
+        <Text>Small Shadow</Text>
       </Card>
       <Card
         boxShadowSize="md"
@@ -73,7 +73,7 @@ storiesOf('Card', module)
         bg="white"
         borderWidth={2}
       >
-        Medium Shadow
+        <Text>Medium Shadow</Text>
       </Card>
       <Card
         boxShadowSize="lg"
@@ -84,7 +84,7 @@ storiesOf('Card', module)
         bg="white"
         borderWidth={2}
       >
-        Large Shadow
+        <Text>Large Shadow</Text>
       </Card>
       <Card
         boxShadowSize="xl"
@@ -95,7 +95,7 @@ storiesOf('Card', module)
         bg="white"
         borderWidth={2}
       >
-        XLarge Shadow
+        <Text>XLarge Shadow</Text>
       </Card>
     </Box>
   ))
@@ -110,7 +110,7 @@ storiesOf('Card', module)
         bg="white"
         borderRadius={0}
       >
-        Small Shadow - 0px
+        <Text>Small Shadow - 0px</Text>
       </Card>
       <Card
         boxShadowSize="md"
@@ -121,7 +121,7 @@ storiesOf('Card', module)
         bg="white"
         borderRadius={10}
       >
-        Medium Shadow - 10px
+        <Text>Medium Shadow - 10px</Text>
       </Card>
       <Card
         boxShadowSize="lg"
@@ -132,7 +132,7 @@ storiesOf('Card', module)
         bg="white"
         borderRadius={20}
       >
-        Large Shadow - 20px
+        <Text>Large Shadow - 20px</Text>
       </Card>
       <Card
         boxShadowSize="xl"
@@ -143,7 +143,7 @@ storiesOf('Card', module)
         bg="white"
         borderRadius="30px"
       >
-        XLarge Shadow - 30px
+        <Text>XLarge Shadow - 30px</Text>
       </Card>
     </Box>
   ))

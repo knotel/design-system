@@ -1,7 +1,8 @@
 import styled from 'styled-components'
 import theme from './theme'
+import { Image as ImageAlias } from 'react-primitives'
 
-const Image = styled.img`
+const Image = styled(ImageAlias)`
   display: block;
   max-width: 100%;
   height: auto;

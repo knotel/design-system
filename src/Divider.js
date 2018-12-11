@@ -1,8 +1,9 @@
 import styled from 'styled-components'
 import theme from './theme'
+import Flex from './Flex'
 import { space, width, borderColor, propTypes } from 'styled-system'
 
-const Divider = styled.hr`
+const Divider = styled(Flex)`
   border: 0;
   border-bottom-style: solid;
   border-bottom-width: 1px;
