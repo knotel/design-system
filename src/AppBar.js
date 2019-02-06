@@ -23,6 +23,12 @@ const AppBar = styled(Flex)`
 export default class AppBarWrapper extends React.Component {
   render () {
     const LogoWrapper = this.props.logoWrapper
+    const logo =
+      <Icon
+        name='knotelLogo'
+        size={80}
+        color={this.props.inverse ? theme.colors.white : this.props.color}
+      />
     return (
       <AppBar
         align='center'
@@ -32,13 +38,7 @@ export default class AppBarWrapper extends React.Component {
         inverse={this.props.inverse}
       >
         <Box>
-          <LogoWrapper to={this.props.logoPath}>
-            <Icon
-              name='knotelLogo'
-              size={80}
-              color={this.props.inverse ? theme.colors.white : this.props.color}
-            />
-          </LogoWrapper>
+          { LogoWrapper ? <LogoWrapper to={this.props.logoPath}>{logo}</LogoWrapper> : logo}
         </Box>
         <Flex>{this.props.children}</Flex>
       </AppBar>
