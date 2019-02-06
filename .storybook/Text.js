@@ -14,6 +14,7 @@ storiesOf('Text', module)
   )
   .add('fontSize', () => (
     <div>
+      <Text fontSize={7}>Hello 7</Text>
       <Text fontSize={6}>Hello 6</Text>
       <Text fontSize={5}>Hello 5</Text>
       <Text fontSize={4}>Hello 4</Text>

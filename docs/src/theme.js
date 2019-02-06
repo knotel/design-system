@@ -1,9 +1,9 @@
 // theme for mdx-docs components
 import { theme } from 'pcln-design-system'
 
-const { space, colors, fontSizes, fontWeights } = theme
+const { colors, fontSizes } = theme
 
-const { blue, gray50, gray300 } = colors
+const { blue, gray50 } = colors
 
 const monospace = '"Roboto Mono", Menlo, monospace'
 

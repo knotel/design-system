@@ -46,6 +46,7 @@ describe('Text', () => {
     const f4 = renderer.create(<Text fontSize={4} />).toJSON()
     const f5 = renderer.create(<Text fontSize={5} />).toJSON()
     const f6 = renderer.create(<Text fontSize={6} />).toJSON()
+    const f7 = renderer.create(<Text fontSize={7} />).toJSON()
     expect(f0).toHaveStyleRule('font-size', theme.fontSizes[0] + 'px')
     expect(f1).toHaveStyleRule('font-size', theme.fontSizes[1] + 'px')
     expect(f2).toHaveStyleRule('font-size', theme.fontSizes[2] + 'px')
@@ -53,6 +54,7 @@ describe('Text', () => {
     expect(f4).toHaveStyleRule('font-size', theme.fontSizes[4] + 'px')
     expect(f5).toHaveStyleRule('font-size', theme.fontSizes[5] + 'px')
     expect(f6).toHaveStyleRule('font-size', theme.fontSizes[6] + 'px')
+    expect(f7).toHaveStyleRule('font-size', theme.fontSizes[7] + 'px')
   })
 
   test('mt prop sets margin-top', () => {

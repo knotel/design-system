@@ -32,7 +32,7 @@ export const font = `'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif`
 
 export const headingFont = 'halyard-display'
 
-export const fontSizes = [12, 14, 16, 20, 24, 32, 48]
+export const fontSizes = [12, 14, 16, 20, 24, 32, 48, 60]
 
 export const regular = 400
 export const medium = 500
@@ -51,7 +51,7 @@ const letterSpacings = {
 }
 
 // warm color palette
-const yellow = '#F1C40F'
+const yellow = '#EDB506'
 const lightOrange = '#F39C12'
 const orange = '#E67E22'
 const darkOrange = '#D35400'
@@ -68,8 +68,12 @@ const lightBlue = '#4F9FD5'
 const blueGreen = '#16A085'
 const mintGreen = '#1ABC9C'
 
+// standard palette
+const coral = '#FC5C51'
+const cobalt = '#1379C1'
+
 // grayscale
-const black = '#000'
+const black = '#000000'
 const gray900 = '#1F1F1F'
 const gray800 = '#333333'
 const gray700 = '#4F4F4F'
@@ -80,20 +84,20 @@ const gray300 = '#D1D1D1'
 const gray200 = '#E8E8E8'
 const gray100 = '#F0F0F0'
 const gray50 = '#F7F7F7'
-const white = '#fff'
+const white = '#FFFFFF'
 
 const text = gray800
 
 const primary = purple
 
 // tints
-const flatten = (name, colors) =>
-  colors.reduce((a, b, i) => {
-    const color = {
-      [name + i]: b
-    }
-    return { ...a, ...color }
-  }, {})
+// const flatten = (name, colors) =>
+//   colors.reduce((a, b, i) => {
+//     const color = {
+//       [name + i]: b
+//     }
+//     return { ...a, ...color }
+//   }, {})
 
 const colors = {
   yellow,
@@ -110,6 +114,8 @@ const colors = {
   lightBlue,
   blueGreen,
   mintGreen,
+  coral,
+  cobalt,
   black,
   gray900,
   gray800,

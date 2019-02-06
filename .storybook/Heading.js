@@ -16,7 +16,7 @@ storiesOf('Heading', module)
       text: description
     })(() => <Heading m={3}>Heading component</Heading>)
   )
-  .add('Using dot-notation with h1-h6', () => (
+  .add('Using dot-notation with h1-h7', () => (
     <section>
       <Heading.h1>Heading h1</Heading.h1>
       <Heading.h2>Heading h2</Heading.h2>
