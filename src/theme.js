@@ -34,12 +34,16 @@ export const headingFont = 'halyard-display'
 
 export const fontSizes = [12, 14, 16, 20, 24, 32, 48, 60]
 
+export const light = 200
+export const thin = 300
 export const regular = 400
 export const medium = 500
 export const bold = 600
 
 // styled-system's `fontWeight` function can hook into the `fontWeights` object
 export const fontWeights = {
+  light,
+  thin,
   regular,
   medium,
   bold
@@ -88,16 +92,12 @@ const white = '#FFFFFF'
 
 const text = gray800
 
-const primary = purple
+const primary = darkBlue
+const secondary = purple
 
-// tints
-// const flatten = (name, colors) =>
-//   colors.reduce((a, b, i) => {
-//     const color = {
-//       [name + i]: b
-//     }
-//     return { ...a, ...color }
-//   }, {})
+const success = mintGreen
+const warning = yellow
+const error = crimsonRed
 
 const colors = {
   yellow,
@@ -129,7 +129,11 @@ const colors = {
   gray50,
   white,
   text,
-  primary
+  primary,
+  secondary,
+  success,
+  warning,
+  error
 }
 
 export { colors }
@@ -184,6 +188,8 @@ const theme = {
   fontSizes,
   fontWeights,
   letterSpacings,
+  light,
+  thin,
   regular,
   medium,
   bold,
