@@ -44,7 +44,7 @@ const type = props => {
     },
     error: {
       backgroundColor: props.theme.colors.error,
-      color: props.theme.colors.darkRed
+      color: props.theme.colors.white
     },
     blue: {
       backgroundColor: props.theme.colors.blue,
@@ -94,7 +94,6 @@ const type = props => {
 }
 
 const fullWidth = props => (props.fullWidth ? { width: '100%' } : null)
-console.log(`->`, type)
 const Button = styled.button`
   -webkit-font-smoothing: antialiased;
   display: inline-block;
@@ -119,7 +118,7 @@ const Button = styled.button`
         ? null
         : darken(
             0.075,
-            props.bg ? theme.colors[props.bg] : theme.colors.gray200
+            props.bg ? theme.colors[props.bg] : theme.colors.gray50
           )};
   }
 
