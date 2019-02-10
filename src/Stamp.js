@@ -1,4 +1,3 @@
-import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { theme as themeGet, space, fontSize, color } from 'styled-system'
