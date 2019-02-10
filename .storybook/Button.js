@@ -17,11 +17,11 @@ storiesOf('Button', module)
       <Button bg="success" mr={2}>
         Success
       </Button>
+      <Button bg="warning" mr={2}>
+        Button
+      </Button>
       <Button bg="error" mr={2}>
         Error
-      </Button>
-      <Button variant="primary" mr={2}>
-        Button
       </Button>
     </div>
   ))

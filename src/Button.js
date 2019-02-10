@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
-import { color, space } from 'styled-system'
+import { color, space, theme as themeGet } from 'styled-system'
 import { darken } from 'polished'
 import theme from './theme'
 
@@ -33,7 +33,10 @@ const type = props => {
   const buttonColors = {
     success: {
       backgroundColor: props.theme.colors.success,
-      color: props.theme.colors.white
+      color: props.theme.colors.white,
+      '&:hover': {
+        backgroundColor: darken(0.075, props.theme.colors.success)
+      }
     },
     warning: {
       backgroundColor: props.theme.colors.warning,
@@ -41,7 +44,7 @@ const type = props => {
     },
     error: {
       backgroundColor: props.theme.colors.error,
-      color: props.theme.colors.white
+      color: props.theme.colors.darkRed
     },
     blue: {
       backgroundColor: props.theme.colors.blue,
