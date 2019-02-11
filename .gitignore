@@ -3,6 +3,7 @@ npm-debug.log
 package-lock.json
 dist
 yarn.lock
+yarn-error.log
 coverage
 .site
 icons.json
