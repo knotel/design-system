@@ -25,7 +25,7 @@ const numberStringOrArray = PropTypes.oneOfType([
 Box.propTypes = {
   color: PropTypes.string,
   bg: PropTypes.string,
-  background: PropTypes.string,
+  lg: PropTypes.string,
   width: numberStringOrArray,
   w: numberStringOrArray,
   /** Margin */
