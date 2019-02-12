@@ -7,6 +7,7 @@ const align = responsiveStyle('text-align', 'align')
 const Box = styled.div`
   ${space} ${width} ${color} ${align};
   box-sizing: border-box;
+  background: linear-gradient(${props => props.lg});
 `
 
 Box.displayName = 'Box'
@@ -24,6 +25,7 @@ const numberStringOrArray = PropTypes.oneOfType([
 Box.propTypes = {
   color: PropTypes.string,
   bg: PropTypes.string,
+  lg: PropTypes.string,
   width: numberStringOrArray,
   w: numberStringOrArray,
   /** Margin */

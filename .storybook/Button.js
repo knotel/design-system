@@ -1,23 +1,28 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { withInfo } from '@storybook/addon-info'
-import { Button, GreenButton, RedButton, OutlineButton } from '../src'
+import { Button } from '../src'
 
 storiesOf('Button', module)
   .add(
     'Button component',
     withInfo({
       inline: true,
-      text:
-        'Use the <Button />,  <GreenButton />, <RedButton />,  <OutlineButton/ > components to render a primitive button.'
+      text: 'Use the <Button /> components to render a primitive button.'
     })(() => <Button size="large">Button</Button>)
   )
   .add('color', () => (
     <div>
       <Button mr={2}>Button</Button>
-      <GreenButton mr={2}>GreenButton</GreenButton>
-      <RedButton mr={2}>RedButton</RedButton>
-      <OutlineButton mr={2}>OutlineButton</OutlineButton>
+      <Button bg="success" mr={2}>
+        Success
+      </Button>
+      <Button bg="warning" mr={2}>
+        Button
+      </Button>
+      <Button bg="error" mr={2}>
+        Error
+      </Button>
     </div>
   ))
   .add('sizes', () => (
