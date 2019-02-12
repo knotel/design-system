@@ -29,12 +29,10 @@ export default {
   LayoutContainer: {
     paddingBottom: '128px'
   },
-
   MenuButton: {
     padding: '8px',
     color: blue
   },
-
   LiveCode: {
     border: `1px solid ${gray50}`,
     borderRadius: '2px',

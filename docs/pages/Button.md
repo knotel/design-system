@@ -31,26 +31,3 @@ Prop | Type | Description
 `size` | string | Sets button size to small, medium or large
 `fullWidth` | boolean | Sets button width to fullWidth
 
-## GreenButton
-
-```.jsx
-<GreenButton>
-  GreenButton
-</GreenButton>
-```
-
-## RedButton
-
-```.jsx
-<RedButton>
-  RedButton
-</RedButton>
-```
-
-## OutlineButton
-
-```.jsx
-<OutlineButton>
-  OutlineButton
-</OutlineButton>
-```
