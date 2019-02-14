@@ -5,7 +5,6 @@ import styled, {
   createGlobalStyle
 } from 'styled-components'
 import nextTheme from './theme'
-import legacyTheme from './legacyTheme'
 
 createGlobalStyle`body {
   margin: 0;
@@ -33,8 +32,8 @@ export const Base = styled.div`
   }
 `
 
-const ThemeProvider = ({ legacy, customBreakpoints, ...props }) => {
-  const baseTheme = legacy ? legacyTheme : nextTheme
+const ThemeProvider = ({ customBreakpoints, ...props }) => {
+  const baseTheme = nextTheme
   const breakpoints = customBreakpoints || baseTheme.breakpoints
   const theme = {
     ...baseTheme,
@@ -49,8 +48,6 @@ const ThemeProvider = ({ legacy, customBreakpoints, ...props }) => {
 }
 
 ThemeProvider.propTypes = {
-  /** Enable legacy color palette */
-  legacy: PropTypes.bool,
   /** Array of pixel values for custom breakpoint overrides */
   customBreakpoints: PropTypes.arrayOf(PropTypes.number)
 }

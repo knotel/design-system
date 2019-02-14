@@ -17,6 +17,16 @@ https://pricelinelabs.github.io/design-system/
 npm install pcln-design-system
 ```
 
+## Style Alignments
+
+| | Sketch | Figma |
+| ------ | ------ | ------ |
+| Type | :x: | [:white_check_mark:](https://www.figma.com/file/HP5oJxktiaf3loDxoTRbu3og/Styles?node-id=0%3A1) |
+| Colors | :x: | :x: |
+| Buttons | :x: | :x: |
+| Badges | :x: | :x: |
+| NavBar | :x: | :x: |
+
 ## Contributing
 
 If you'd like to contribute to the design system, we'd love to have your help.
