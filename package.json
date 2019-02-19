@@ -73,12 +73,9 @@
     "setupTestFrameworkScriptFile": "./test-setup.js"
   },
   "dependencies": {
-    "@mapbox/mapbox-sdk": "^0.4.1",
     "global": "^4.3.2",
-    "mapbox": "^1.0.0-beta10",
     "prop-types": "^15.5.10",
     "rc-slider": "^8.5.0",
-    "react-map-gl": "^4.0.2",
     "styled-system": "^1.0.8"
   },
   "peerDependencies": {
