@@ -22,36 +22,32 @@ const type = props => {
       color: props.theme.colors.white
     },
     green: {
-      backgroundColor: props.theme.colors.green,
+      backgroundColor: props.theme.colors._456,
       color: props.theme.colors.white
     },
     lightGreen: {
-      backgroundColor: props.theme.colors.lightGreen,
+      backgroundColor: props.theme.colors.g,
       color: props.theme.colors.darkGreen
     },
     red: {
-      backgroundColor: props.theme.colors.red,
+      backgroundColor: props.theme.colors._123,
       color: props.theme.colors.white
     },
-    lightRed: {
-      backgroundColor: props.theme.colors.lightRed,
-      color: props.theme.colors.darkRed
-    },
     orange: {
-      backgroundColor: props.theme.colors.orange,
-      color: props.theme.colors.text
+      backgroundColor: props.theme.colors.jz,
+      color: props.theme.colors.white
     },
     lightOrange: {
-      backgroundColor: props.theme.colors.lightOrange,
-      color: props.theme.colors.darkOrange
+      backgroundColor: props.theme.colors.bdfm,
+      color: props.theme.colors.white
     },
     gray: {
-      backgroundColor: props.theme.colors.gray600,
+      backgroundColor: props.theme.colors.s,
       color: props.theme.colors.white
     },
     gray50: {
-      backgroundColor: props.theme.colors.gray50,
-      color: props.theme.colors.text
+      backgroundColor: props.theme.colors.l,
+      color: props.theme.colors.white
     }
   }
   return !(props.bg && props.color) && (markerColors[props.bg] || mtaColors.s)
@@ -60,12 +56,12 @@ const type = props => {
 const Marker = styled.div`
   border-radius: 50%;
   display: inline-block;
-  font-size: ${props => props.theme.fontSizes[0]}px;
+  font-size: ${props => props.theme.fontSizes[2]}px;
   text-transform: uppercase;
   letter-spacing: ${themeGet('letterSpacings.caps')};
-	width: 40px;
-	height: 40px;
-  line-height: 40px;
+	width: 30px;
+	height: 30px;
+  line-height: 20px;
 	color: white;
 	text-align: center;
 	font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
