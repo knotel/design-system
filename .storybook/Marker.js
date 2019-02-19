@@ -17,9 +17,28 @@ storiesOf('Marker', module)
       <Marker bg="blue">C</Marker>
       <Marker bg="blue">e</Marker>
 
-      <Marker bg="orange">B</Marker>
+      <Marker bg="lightOrange">B</Marker>
+      <Marker bg="lightOrange">D</Marker>
+      <Marker bg="lightOrange">F</Marker>
+      <Marker bg="lightOrange">M</Marker>
+
+      <Marker bg="red">1</Marker>
+      <Marker bg="red">2</Marker>
+      <Marker bg="red">3</Marker>
+
+      <Marker bg="yellow">N</Marker>
+      <Marker bg="yellow">Q</Marker>
+      <Marker bg="yellow">R</Marker>
+      <Marker bg="yellow">W</Marker>
+
+      <Marker bg="gray">L</Marker>
+
       <Marker bg="green">G</Marker>
+
+      <Marker bg="orange">J</Marker>
       <Marker bg="orange">Z</Marker>
+
+      <Marker bg="purple">7</Marker>
 
       <Marker bg="text" color="white">
         +
