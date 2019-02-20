@@ -9,7 +9,7 @@ import PropTypes from 'prop-types'
 
 const AppBar = styled(Flex)`
   border-bottom: 1px solid ${props => props.theme.colors.gray200};
-  height: 100px;
+  height: 50px;
   padding: 0px ${props => theme.space[3]}px;
   ${props => props.theme.mediaQueries['md']} {
     height: 60px;
