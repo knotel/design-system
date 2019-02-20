@@ -129,7 +129,7 @@ export default class AppBarWrapper extends React.Component {
           {this.props.children}
           {links &&
             <DesktopLinksWrapper>
-              {links.map => <DesktopLink px={2} to={link.to} onClick={() => this.toggleMenu()}>{link.label}</DesktopLink>}
+              {links.map(link => <DesktopLink px={2} to={link.to} onClick={() => this.toggleMenu()}>{link.label}</DesktopLink>})
             </DesktopLinksWrapper>
           }
           {links &&
