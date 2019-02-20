@@ -61,7 +61,7 @@ const MobileMenu = styled(Flex)`
   position: fixed;
   right: ${props => props.menuOpen ? '0px' : '-260px'};
   top: 0;
-  transform: ${props => props.menuOpen && 'translateX(10px)'};
+  transform: ${props => props.menuOpen ? 'translate3d(260px, 0, 0)' : 'translate3d(0)'};
   transition: ${props => props.menuOpen && '0.2s ease-in-out'};
   min-width: 260px;
   z-index: 5;
@@ -69,7 +69,7 @@ const MobileMenu = styled(Flex)`
 
 const Close = styled(Icon)`
   position: absolute;
-  top: 16px;
+  top: 17px;
   left: 16px;
   &:hover {
     cursor: pointer;
