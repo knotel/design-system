@@ -68,15 +68,6 @@ const Close = styled(Icon)`
   }
 `
 
-const MobileLink = styled.a`
-  display: block;
-  padding-bottom: ${props => `${props.theme.space[3]}px`};
-  &:hover {
-    cursor: pointer;
-    text-decoration: none !important;
-  }
-`
-
 
 export default class AppBarWrapper extends React.Component {
 
@@ -89,7 +80,7 @@ export default class AppBarWrapper extends React.Component {
   }
 
   render () {
-    const linkComponent = this.props.linkComponent
+    const LinkComponent = this.props.linkComponent
     const links = this.props.links
     const logo =
       <Icon
@@ -97,6 +88,18 @@ export default class AppBarWrapper extends React.Component {
         size={80}
         color={this.props.inverse ? theme.colors.white : this.props.color}
       />
+
+      if (LinkComponent) {
+          const MobileLink = styled(LinkComponent)`
+          display: block;
+          padding-bottom: ${props => `${props.theme.space[3]}px`};
+          &:hover {
+            cursor: pointer;
+            text-decoration: none !important;
+          }
+        `
+      }
+
     return (
       <AppBar
         align='center'
@@ -106,7 +109,7 @@ export default class AppBarWrapper extends React.Component {
         inverse={this.props.inverse}
       >
         <Box>
-          { linkComponent ? <linkComponent to={this.props.logoPath}>{logo}</linkComponent> : logo}
+          { LinkComponent ? <LinkComponent to={this.props.logoPath}>{logo}</LinkComponent> : logo}
         </Box>
         <Flex>
           {this.props.children}
