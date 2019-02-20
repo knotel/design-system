@@ -89,8 +89,10 @@ export default class AppBarWrapper extends React.Component {
         color={this.props.inverse ? theme.colors.white : this.props.color}
       />
 
+      let MobileLink
+
       if (LinkComponent) {
-          const MobileLink = styled(LinkComponent)`
+          MobileLink = styled(LinkComponent)`
           display: block;
           padding-bottom: ${props => `${props.theme.space[3]}px`};
           &:hover {
