@@ -131,7 +131,7 @@ export default class AppBarWrapper extends React.Component {
           {this.props.children}
           {links &&
             <DesktopLinksWrapper>
-              {links.map(link => <DesktopLink px={3} to={link.to} onClick={() => this.toggleMenu()}>{link.label}</DesktopLink>)}
+              {links.map(link => <DesktopLink key={link.label} px={3} to={link.to} onClick={() => this.toggleMenu()}>{link.label}</DesktopLink>)}
             </DesktopLinksWrapper>
           }
           {links &&
@@ -140,7 +140,7 @@ export default class AppBarWrapper extends React.Component {
               <Skrim onClick={() => this.toggleMenu()} menuOpen={this.state.menuOpen} />
               <MobileMenu align="flex-end" flexDirection="column" pt={5} px={5} menuOpen={this.state.menuOpen}>
                 <Close onClick={() => this.toggleMenu()} name="close" color={theme.colors.gray500} />
-                {links && links.map(link => <MobileLink to={link.to} onClick={() => this.toggleMenu()}>{link.label}</MobileLink>)}
+                {links && links.map(link => <MobileLink key={link.label} to={link.to} onClick={() => this.toggleMenu()}>{link.label}</MobileLink>)}
               </MobileMenu>
             </React.Fragment>
           }
