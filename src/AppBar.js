@@ -141,8 +141,8 @@ AppBarWrapper.defaultProps = {
 
 AppBarWrapper.propTypes = {
   inverse: PropTypes.bool,
-  links: PropTypes.shape({
+  links: PropTypes.arrayOf(PropTypes.shape({
     to: PropTypes.string,
     label: PropTypes.string
-  })
+  }))
 }
