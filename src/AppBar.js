@@ -23,8 +23,9 @@ const AppBar = styled(Flex)`
 
 const DesktopLinksWrapper = styled(Flex)`
   ${props => props.theme.mediaQueries['md']} {
-    display: none;
-  }  
+    display: block;
+  }
+  display: none;  
 `
 
 const Hamburger = styled(Icon)`
@@ -101,16 +102,17 @@ export default class AppBarWrapper extends React.Component {
 
       if (LinkComponent) {
           DesktopLink = styled(LinkComponent)`
-          position: relative;
-          top: -4px;
+            position: relative;
+            top: -3px;
+            ${space}
         `
           MobileLink = styled(LinkComponent)`
-          display: block;
-          padding-bottom: ${props => `${props.theme.space[3]}px`};
-          &:hover {
-            cursor: pointer;
-            text-decoration: none !important;
-          }
+            display: block;
+            padding-bottom: ${props => `${props.theme.space[3]}px`};
+            &:hover {
+              cursor: pointer;
+              text-decoration: none !important;
+            }
         `
       }
 
