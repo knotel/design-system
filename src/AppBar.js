@@ -8,8 +8,8 @@ import PropTypes from 'prop-types'
 
 const AppBar = styled(Flex)`
   border-bottom: 1px solid ${props => props.theme.colors.gray200};
-  height: 48px;
-  padding: 0px ${props => theme.space[2]}px;
+  height: 100px;
+  padding: 0px ${props => theme.space[3]}px;
   ${props => props.theme.mediaQueries['md']} {
     height: 60px;
     padding: 0px ${props => theme.space[4]}px;
@@ -20,9 +20,77 @@ const AppBar = styled(Flex)`
   }
 `
 
+const Hamburger = styled(Icon)`
+  ${props => props.theme.mediaQueries['md']} {
+    display: none;
+  }
+  position: relative;
+  top: -2px;
+  &:hover {
+    cursor: pointer;
+  }
+`
+
+const Skrim = styled.div`
+  ${props => props.theme.mediaQueries['md']} {
+    display: none;
+  }
+  background: rgba(0,0,0,0.4);
+  display: ${props => props.menuOpen ? 'block' : 'none'};
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+`
+
+const MobileMenu = styled(Flex)`
+  ${props => props.theme.mediaQueries['md']} {
+    display: none;
+  }
+  background: #fff;
+  bottom: 0;
+  position: fixed;
+  right: ${props => props.menuOpen ? '0px' : '-260px'};
+  top: 0;
+  transform: ${props => props.menuOpen && 'translateX(10px)'};
+  transition: ${props => props.menuOpen && '0.2s ease-in-out'};
+  min-width: 260px;
+  z-index: 5;
+`
+
+const Close = styled(Icon)`
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  &:hover {
+    cursor: pointer;
+  }
+`
+
+const MobileLink = styled.a`
+  display: block;
+  padding-bottom: ${props => `${props.theme.space[3]}px`};
+  &:hover {
+    cursor: pointer;
+    text-decoration: none !important;
+  }
+`
+
+
 export default class AppBarWrapper extends React.Component {
+
+  state = {
+    menuOpen: false
+  }
+
+  toggleMenu() {
+    this.setState({menuOpen: !this.state.menuOpen});
+  }
+
   render () {
-    const LogoWrapper = this.props.logoWrapper
+    const linkComponent = this.props.linkComponent
+    const links = this.props.links
     const logo =
       <Icon
         name='knotelLogo'
@@ -38,9 +106,21 @@ export default class AppBarWrapper extends React.Component {
         inverse={this.props.inverse}
       >
         <Box>
-          { LogoWrapper ? <LogoWrapper to={this.props.logoPath}>{logo}</LogoWrapper> : logo}
+          { linkComponent ? <linkComponent to={this.props.logoPath}>{logo}</linkComponent> : logo}
         </Box>
-        <Flex>{this.props.children}</Flex>
+        <Flex>
+          {this.props.children}
+          {links &&
+            <React.Fragment>
+              <Hamburger onClick={() => this.toggleMenu()}  name='menu' color={theme.colors.gray500} />
+              <Skrim onClick={() => this.toggleMenu()} menuOpen={this.state.menuOpen} />
+              <MobileMenu align="flex-end" flexDirection="column" pt={5} px={5} menuOpen={this.state.menuOpen}>
+                <Close onClick={() => this.toggleMenu()} name="close" color={theme.colors.gray500} />
+                {links && links.map(link => <MobileLink onClick={() => this.toggleMenu()}>{link}</MobileLink>)}
+              </MobileMenu>
+            </React.Fragment>
+          }
+        </Flex>
       </AppBar>
     )
   }
@@ -55,5 +135,9 @@ AppBarWrapper.defaultProps = {
 }
 
 AppBarWrapper.propTypes = {
-  inverse: PropTypes.bool
+  inverse: PropTypes.bool,
+  links: PropTypes.shape({
+    to: PropTypes.string,
+    label: PropTypes.string
+  })
 }
