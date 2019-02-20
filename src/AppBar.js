@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { space } from 'styled-system'
+import { space, fontSize } from 'styled-system'
 import Flex from './Flex'
 import Box from './Box'
 import Icon from './Icon'
@@ -113,6 +113,7 @@ export default class AppBarWrapper extends React.Component {
               cursor: pointer;
               text-decoration: none !important;
             }
+            ${fontSize}
         `
       }
 
@@ -140,7 +141,7 @@ export default class AppBarWrapper extends React.Component {
               <Skrim onClick={() => this.toggleMenu()} menuOpen={this.state.menuOpen} />
               <MobileMenu align="flex-end" flexDirection="column" pt={5} px={5} menuOpen={this.state.menuOpen}>
                 <Close onClick={() => this.toggleMenu()} name="close" color={theme.colors.gray500} />
-                {links && links.map(link => <MobileLink key={link.label} to={link.to} onClick={() => this.toggleMenu()}>{link.label}</MobileLink>)}
+                {links && links.map(link => <MobileLink fontSize={3} key={link.label} to={link.to} onClick={() => this.toggleMenu()}>{link.label}</MobileLink>)}
               </MobileMenu>
             </React.Fragment>
           }
