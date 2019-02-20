@@ -59,7 +59,6 @@ const MobileMenu = styled(Flex)`
   background: #fff;
   bottom: 0;
   position: fixed;
-  right: ${props => props.menuOpen ? '0px' : '-260px'};
   top: 0;
   transform: ${props => props.menuOpen ? 'translate3d(260px, 0, 0)' : 'translate3d(0)'};
   transition: ${props => props.menuOpen && '0.2s ease-in-out'};
