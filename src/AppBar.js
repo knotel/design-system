@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { space } from 'styled-system'
 import Flex from './Flex'
 import Box from './Box'
 import Icon from './Icon'
@@ -18,6 +19,12 @@ const AppBar = styled(Flex)`
     color: ${props =>
       props.inverse ? props.theme.colors.white : props.theme.colors.text};
   }
+`
+
+const DesktopLinksWrapper = styled(Flex)`
+  ${props => props.theme.mediaQueries['md']} {
+    display: none;
+  }  
 `
 
 const Hamburger = styled(Icon)`
@@ -89,9 +96,14 @@ export default class AppBarWrapper extends React.Component {
         color={this.props.inverse ? theme.colors.white : this.props.color}
       />
 
+      let DesktopLink
       let MobileLink
 
       if (LinkComponent) {
+          DesktopLink = styled(LinkComponent)`
+          position: relative;
+          top: -4px;
+        `
           MobileLink = styled(LinkComponent)`
           display: block;
           padding-bottom: ${props => `${props.theme.space[3]}px`};
@@ -115,6 +127,11 @@ export default class AppBarWrapper extends React.Component {
         </Box>
         <Flex>
           {this.props.children}
+          {links &&
+            <DesktopLinksWrapper>
+              {links.map => <DesktopLink px={2} to={link.to} onClick={() => this.toggleMenu()}>{link.label}</DesktopLink>}
+            </DesktopLinksWrapper>
+          }
           {links &&
             <React.Fragment>
               <Hamburger onClick={() => this.toggleMenu()}  name='menu' color={theme.colors.gray500} />
