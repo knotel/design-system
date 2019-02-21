@@ -31,6 +31,7 @@ export default class ImageSpaceCard extends React.Component {
   render () {
     const {
       id: spaceId,
+      className,
       imageUrl,
       address,
       neighborhood,
@@ -51,7 +52,7 @@ export default class ImageSpaceCard extends React.Component {
     console.log(this.props)
     return (
       <CardWrapper onClick={this.handleClick} mx={marginX}
-        my={marginY} style={this.props.style}
+        my={marginY} style={this.props.style} className={className}
       >
         <Image
           imageUrl={imageUrl}
