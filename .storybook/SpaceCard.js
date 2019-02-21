@@ -14,7 +14,7 @@ const imageUrls = [
 ]
 
 storiesOf('SpaceCard', module)
-  .add('Box Shadows with default border', () => (
+  .add('default', () => (
     <StyledBox>
       <SpaceCard
         boxShadowSize="sm"
