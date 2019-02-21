@@ -49,7 +49,6 @@ export default class ImageSpaceCard extends React.Component {
       liked,
     } = this.props
 
-    console.log(this.props)
     return (
       <CardWrapper onClick={this.handleClick} mx={marginX}
         my={marginY} style={this.props.style} className={className}

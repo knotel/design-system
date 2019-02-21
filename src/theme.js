@@ -12,7 +12,9 @@ const addAliases = (arr, aliases) =>
 
 export const breakpoints = ['36em', '48em', '62em', '75em']
 
-export const mediaQueries = breakpoints.map(createMediaQuery)
+export const mediaBreakpoints = ['36', '48', '62', '75']
+
+export const mediaQueries = mediaBreakpoints.map(createMediaQuery)
 
 const aliases = ['sm', 'md', 'lg', 'xl']
 
