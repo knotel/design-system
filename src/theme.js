@@ -4,13 +4,13 @@ const addAliases = (arr, aliases) =>
   aliases.forEach((key, i) =>
     Object.defineProperty(arr, key, {
       enumerable: false,
-      get() {
+      get () {
         return this[i]
       }
     })
   )
 
-export const breakpoints = [36, 48, 62, 75]
+export const breakpoints = ['36em', '48em', '62em', '75em']
 
 export const mediaQueries = breakpoints.map(createMediaQuery)
 
