@@ -31,6 +31,10 @@ const size = props => {
 
 const type = props => {
   const buttonColors = {
+    primary: {
+      backgroundColor: props.theme.colors.primary,
+      color: props.theme.colors.white
+    },
     success: {
       backgroundColor: props.theme.colors.success,
       color: props.theme.colors.white,
@@ -114,12 +118,12 @@ const Button = styled.button`
 
   &:hover {
     background-color: ${props =>
-      props.disabled
-        ? null
-        : darken(
-            0.075,
-            props.bg ? theme.colors[props.bg] : theme.colors.gray50
-          )};
+    props.disabled
+      ? null
+      : darken(
+        0.075,
+        props.bg ? theme.colors[props.bg] : theme.colors.gray50
+      )};
   }
 
   &:focus {
