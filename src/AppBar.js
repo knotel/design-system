@@ -94,7 +94,7 @@ export default class AppBarWrapper extends React.Component {
       <Icon
         name='knotelLogo'
         size={80}
-        color={this.props.inverse ? theme.colors.white : this.props.color}
+        color={this.props.inverse ? theme.colors.white : theme.colors.text}
       />
 
       let DesktopLink
