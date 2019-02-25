@@ -149,7 +149,7 @@ export default class AppBarWrapper extends React.Component {
               {links.map(link => <DesktopLink key={link.label} px={3} to={link.to} onClick={() => this.toggleMenu()}>{link.label}</DesktopLink>)}
             </DesktopLinksWrapper>
           }
-          {beforeLink && <BeforeLinks />}
+          {beforeLinks && <BeforeLinks />}
           {links &&
             <React.Fragment>
               <Hamburger onClick={() => this.toggleMenu()}  name='menu' color={theme.colors.gray500} />
