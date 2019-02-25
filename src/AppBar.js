@@ -76,6 +76,17 @@ const Close = styled(Icon)`
   }
 `
 
+const UserPicture = styled.img`
+  ${props => props.theme.mediaQueries['md']} {
+    display: inline;
+  }
+  display: none;
+  height: 32px;
+  border-radius: 50%;
+  position: relative;
+  top: -2px;
+`
+
 
 export default class AppBarWrapper extends React.Component {
 
@@ -90,6 +101,7 @@ export default class AppBarWrapper extends React.Component {
   render () {
     const LinkComponent = this.props.linkComponent
     const links = this.props.links
+    const { beforeLink, userPicture } = this.props
     const logo =
       <Icon
         name='knotelLogo'
@@ -129,12 +141,12 @@ export default class AppBarWrapper extends React.Component {
           { LinkComponent ? <LinkComponent to={this.props.logoPath}>{logo}</LinkComponent> : logo}
         </Box>
         <Flex>
-          {this.props.children}
           {links &&
             <DesktopLinksWrapper>
               {links.map(link => <DesktopLink key={link.label} px={3} to={link.to} onClick={() => this.toggleMenu()}>{link.label}</DesktopLink>)}
             </DesktopLinksWrapper>
           }
+          {beforeLink && (beforeLink => beforeLink)}
           {links &&
             <React.Fragment>
               <Hamburger onClick={() => this.toggleMenu()}  name='menu' color={theme.colors.gray500} />
@@ -145,6 +157,7 @@ export default class AppBarWrapper extends React.Component {
               </MobileMenu>
             </React.Fragment>
           }
+          {userPicture && <UserPicture src={userPicture} />}
         </Flex>
       </AppBar>
     )
@@ -164,5 +177,6 @@ AppBarWrapper.propTypes = {
   links: PropTypes.arrayOf(PropTypes.shape({
     to: PropTypes.string,
     label: PropTypes.string
-  }))
+  })),
+  userPicture: PropTypes.string
 }
