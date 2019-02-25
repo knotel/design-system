@@ -144,12 +144,12 @@ export default class AppBarWrapper extends React.Component {
           { LinkComponent ? <LinkComponent to={this.props.logoPath}>{logo}</LinkComponent> : logo}
         </Box>
         <Flex align="center">
+          {beforeLinks && <BeforeLinks />}
           {links &&
             <DesktopLinksWrapper>
               {links.map(link => <DesktopLink key={link.label} px={3} to={link.to} onClick={() => this.toggleMenu()}>{link.label}</DesktopLink>)}
             </DesktopLinksWrapper>
           }
-          {beforeLinks && <BeforeLinks />}
           {links &&
             <React.Fragment>
               <Hamburger onClick={() => this.toggleMenu()}  name='menu' color={theme.colors.gray500} />
