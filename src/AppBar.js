@@ -103,7 +103,8 @@ export default class AppBarWrapper extends React.Component {
   render () {
     const LinkComponent = this.props.linkComponent
     const links = this.props.links
-    const { beforeLink, userPicture } = this.props
+    const { beforeLinks, userPicture } = this.props
+    const BeforeLinks = beforeLinks
     const logo =
       <Icon
         name='knotelLogo'
@@ -148,7 +149,7 @@ export default class AppBarWrapper extends React.Component {
               {links.map(link => <DesktopLink key={link.label} px={3} to={link.to} onClick={() => this.toggleMenu()}>{link.label}</DesktopLink>)}
             </DesktopLinksWrapper>
           }
-          {beforeLink && (beforeLink => beforeLink)}
+          {beforeLink && <BeforeLinks />}
           {links &&
             <React.Fragment>
               <Hamburger onClick={() => this.toggleMenu()}  name='menu' color={theme.colors.gray500} />
