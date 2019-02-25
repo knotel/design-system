@@ -80,11 +80,13 @@ const UserPicture = styled.img`
   ${props => props.theme.mediaQueries['md']} {
     display: inline;
   }
+  border: ${props => `1px solid ${props.theme.colors.gray200}`};
   display: none;
-  height: 32px;
+  height: 34px;
   border-radius: 50%;
   position: relative;
   top: -2px;
+  ${space}
 `
 
 
@@ -140,7 +142,7 @@ export default class AppBarWrapper extends React.Component {
         <Box>
           { LinkComponent ? <LinkComponent to={this.props.logoPath}>{logo}</LinkComponent> : logo}
         </Box>
-        <Flex>
+        <Flex align="center">
           {links &&
             <DesktopLinksWrapper>
               {links.map(link => <DesktopLink key={link.label} px={3} to={link.to} onClick={() => this.toggleMenu()}>{link.label}</DesktopLink>)}
@@ -157,7 +159,7 @@ export default class AppBarWrapper extends React.Component {
               </MobileMenu>
             </React.Fragment>
           }
-          {userPicture && <UserPicture src={userPicture} />}
+          {userPicture && <UserPicture ml={2} src={userPicture} />}
         </Flex>
       </AppBar>
     )
