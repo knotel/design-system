@@ -29,6 +29,7 @@ const Modal = styled(Card)`
   right: 0;
   top: 0;
   visibility: ${props => (props.showModal ? 'visible' : 'hidden')};
+  z-index: 200;
   ${props => props.theme.mediaQueries['md']} {
     border-radius: 2px;
     bottom: initial;

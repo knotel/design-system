@@ -65,7 +65,7 @@ const MobileMenu = styled(Flex)`
     props.menuOpen ? 'translate3d(-260px, 0, 0)' : 'translate3d(0)'};
   transition: ${props => props.menuOpen && '0.2s ease-in-out'};
   min-width: 260px;
-  z-index: 5;
+  z-index: 300;
 `
 
 const Close = styled(Icon)`

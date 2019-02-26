@@ -1,6 +1,6 @@
 {
   "name": "@knotel/cinderblock",
-  "version": "0.0.52",
+  "version": "0.0.54",
   "description": "Knotel Design System",
   "main": "dist/index.js",
   "scripts": {
@@ -25,6 +25,7 @@
   ],
   "license": "MIT",
   "devDependencies": {
+    "@babel/cli": "^7.2.3",
     "@babel/core": "^7.3.3",
     "@babel/plugin-proposal-class-properties": "^7.3.3",
     "@babel/plugin-proposal-object-rest-spread": "^7.3.2",
