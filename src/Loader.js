@@ -5,12 +5,9 @@ import 'react-activity/dist/react-activity.css'
 import theme from './theme'
 
 export default class Loader extends React.Component {
-  render () {
+  render() {
     const { color } = this.props
-    return (
-      <Sentry color={color} size={35}
-        speed={0.7} />
-    )
+    return <Sentry color={color} size={35} speed={0.7} />
   }
 }
 

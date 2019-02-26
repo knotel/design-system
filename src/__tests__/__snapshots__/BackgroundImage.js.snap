@@ -14,30 +14,14 @@ exports[`BackgroundImage renders 1`] = `
 `;
 
 exports[`BackgroundImage renders with height 1`] = `
-.c0 {
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-color: #687B8E;
-  height: 320px;
-}
-
 <div
-  className="c0"
+  className="dHEIDR"
   height="320px"
 />
 `;
 
 exports[`BackgroundImage renders with image 1`] = `
-.c0 {
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-color: #687B8E;
-  background-image: url(hello.png);
-}
-
 <div
-  className="c0"
+  className="eHYuZ"
 />
 `;

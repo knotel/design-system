@@ -1,30 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Heading Heading component using <Text> component properties 1`] = `
-.c0 {
-  font-size: 24px;
-  margin: 0px;
-  color: #687B8E;
-  font-weight: 400;
-  text-align: center;
-}
-
 <h3
-  className="c0"
-  color="#687B8E"
+  className="kJDkXl"
+  fontFamily="halyard-display"
   fontSize={4}
 />
 `;
 
 exports[`Heading Heading component with default theme font size, when "fontSize" prop not used 1`] = `
-.c0 {
-  font-size: 24px;
-  margin: 0px;
-  font-weight: 400;
-}
-
 <h3
-  className="c0"
+  className="jaeOUv"
+  fontFamily="halyard-display"
   fontSize={4}
 />
 `;
