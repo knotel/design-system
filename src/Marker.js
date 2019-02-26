@@ -17,20 +17,68 @@ const type = props => {
     _7: '#B933AD'
   }
   const markerColors = {
+    line_A: {
+      backgroundColor: mtaColors.ace,
+      color: props.theme.colors.white
+    },
+    line_C: {
+      backgroundColor: mtaColors.ace,
+      color: props.theme.colors.white
+    },
+    line_E: {
+      backgroundColor: mtaColors.ace,
+      color: props.theme.colors.white
+    },
     blue: {
       backgroundColor: mtaColors.ace,
+      color: props.theme.colors.white
+    },
+    line_4: {
+      backgroundColor: props.theme.colors._456,
+      color: props.theme.colors.white
+    },
+    line_5: {
+      backgroundColor: props.theme.colors._456,
+      color: props.theme.colors.white
+    },
+    line_6: {
+      backgroundColor: props.theme.colors._456,
       color: props.theme.colors.white
     },
     green: {
       backgroundColor: props.theme.colors._456,
       color: props.theme.colors.white
     },
+    line_G: {
+      backgroundColor: props.theme.colors.g,
+      color: props.theme.colors.darkGreen
+    },
     lightGreen: {
       backgroundColor: props.theme.colors.g,
       color: props.theme.colors.darkGreen
     },
+    line_1: {
+      backgroundColor: props.theme.colors._123,
+      color: props.theme.colors.white
+    },
+    line_2: {
+      backgroundColor: props.theme.colors._123,
+      color: props.theme.colors.white
+    },
+    line_3: {
+      backgroundColor: props.theme.colors._123,
+      color: props.theme.colors.white
+    },
     red: {
       backgroundColor: props.theme.colors._123,
+      color: props.theme.colors.white
+    },
+    line_J: {
+      backgroundColor: props.theme.colors.jz,
+      color: props.theme.colors.white
+    },
+    line_Z: {
+      backgroundColor: props.theme.colors.jz,
       color: props.theme.colors.white
     },
     orange: {
