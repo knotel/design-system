@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react'
 import { BackgroundImage, Box, Text, Flex } from '../src'
 
 const image =
-  'https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&s=aee8a50c86478d935556d865624506e4'
+  'https://img.archilovers.com/projects/b_730_9e96dd59-7bb9-4ecb-ae3f-c67a70f56264.jpg'
 
 storiesOf('BackgroundImage', module)
   .add('Basic', () => (

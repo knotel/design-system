@@ -29,7 +29,7 @@ storiesOf('Absolute', module)
       <Absolute top={8} left={0}>
         <Flag>Hello Flag</Flag>
       </Absolute>
-      <Image src="https://www.priceline.com/home/public/assets/images/photos/photo-aruba.jpg" />
+      <Image src="https://img.archilovers.com/projects/b_730_9e96dd59-7bb9-4ecb-ae3f-c67a70f56264.jpg" />
     </Relative>
   ))
   .add('Positioning an icon', () => (

@@ -8,7 +8,6 @@ import {
   Box,
   Heading,
   Button,
-  OutlineButton,
   Label,
   theme
 } from '../src'
@@ -88,9 +87,6 @@ storiesOf('Checkbox', module).add('Checkbox states', () => (
           <Button type="submit">Submit Me</Button>
           <br />
           <br />
-          <OutlineButton color={theme.colors.gray600} type="reset">
-            Reset Me
-          </OutlineButton>
         </fieldset>
       </form>
     </Wrapper>

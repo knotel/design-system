@@ -27,11 +27,8 @@ const aliases = {
   plane: 'flights'
 }
 
-const getPath = ({ name, legacy }) => {
-  if (!legacy) {
-    return icons[name] || icons.legacy[name]
-  }
-  return icons.legacy[name] || icons[name] || icons[aliases[name]]
+const getPath = ({ name }) => {
+  return icons[name]
 }
 
 // Remove `space` props from the `svg` element prevents react warnings
@@ -40,8 +37,8 @@ CleanSvg.propTypes = {
   ...propTypes.space
 }
 
-const Base = ({ name, size, legacy, ...props }) => {
-  const icon = getPath({ name, legacy })
+const Base = ({ name, size, ...props }) => {
+  const icon = getPath({ name })
   if (!icon) return false
 
   return (
@@ -50,7 +47,7 @@ const Base = ({ name, size, legacy, ...props }) => {
       viewBox={icon.viewBox}
       width={size}
       height={size}
-      fill="currentcolor"
+      fill='currentcolor'
     >
       <path d={icon.path} />
     </CleanSvg>
@@ -67,26 +64,16 @@ Icon.displayName = 'Icon'
 Icon.defaultProps = {
   name: 'checkLight',
   size: 24,
-  legacy: true,
   theme: theme
 }
 
 const allKeys = Object.keys({
   ...icons,
-  ...icons.legacy,
   ...aliases
 })
 
 Icon.propTypes = {
   name: ({ name }) => {
-    if (aliases[name] && !icons[name] && !icons.legacy[name]) {
-      console.warn(
-        `Using '${name}' as an Icon name has been deprecated. Use '${
-          aliases[name]
-        }' instead.`
-      )
-    }
-
     if (!allKeys.includes(name)) {
       return new Error(
         `Failed prop type: Invalid prop name of value '${name}' supplied to Icon, expected one of ${allKeys.toString()} is expected`
@@ -94,7 +81,6 @@ Icon.propTypes = {
     }
   },
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  legacy: PropTypes.bool,
   color: PropTypes.string
 }
 

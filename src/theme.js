@@ -94,7 +94,7 @@ const white = '#FFFFFF'
 
 const text = gray800
 
-const primary = darkBlue
+const primary = darkPink
 const secondary = purple
 
 const success = mintGreen
