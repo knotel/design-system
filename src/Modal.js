@@ -16,12 +16,14 @@ const Wrapper = styled(Flex)`
     right: 0;
     top: 0;
     visibility: ${props => props.showModal ? 'visible' : 'hidden'};
+    z-index: 100;
 `
 
 const Modal = styled(Card)`
     background: ${props => props.theme.colors.white};
     bottom: 0;
     box-shadow: ${props => props.theme.boxShadows[2]};
+    box-sizing: border-box;
     left: 0;
     opacity: ${props => props.showModal ? 1 : 0};
     pointer-events: ${props => props.showModal ? 'auto' : 'none'};
@@ -38,7 +40,6 @@ const Modal = styled(Card)`
         min-height: 200px;
         right: initial;
         top: 25%;
-        min-width: 400px;
     }
 `
 
@@ -57,17 +58,16 @@ const StyledCloseButton = styled(CloseButton)`
 
 export default class StyledModal extends React.Component {
   render () {
-    const { children, showModal, closable, onTriggerClose } = this.props
+    const { children, showModal, closable, onTriggerClose, ...props } = this.props
     return (
       <Wrapper showModal={showModal} flexDirection='column' align='center'>
         <StyledSkrim
           showModal={showModal}
           onClick={closable && onTriggerClose}
-        >
-          {children}
-        </StyledSkrim>
-        <Modal flexDirection='column' showModal={showModal}>
+        />
+        <Modal flexDirection='column' showModal={showModal} {...props}>
           {closable && <StyledCloseButton onClick={onTriggerClose} />}
+          {children}
         </Modal>
       </Wrapper>
     )
