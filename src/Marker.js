@@ -34,119 +34,119 @@ const type = props => {
       color: props.theme.colors.white
     },
     line_4: {
-      backgroundColor: props.theme.colors._456,
+      backgroundColor: mtaColors._456,
       color: props.theme.colors.white
     },
     line_5: {
-      backgroundColor: props.theme.colors._456,
+      backgroundColor: mtaColors._456,
       color: props.theme.colors.white
     },
     line_6: {
-      backgroundColor: props.theme.colors._456,
+      backgroundColor: mtaColors._456,
       color: props.theme.colors.white
     },
     green: {
-      backgroundColor: props.theme.colors._456,
+      backgroundColor: mtaColors._456,
       color: props.theme.colors.white
     },
     line_G: {
-      backgroundColor: props.theme.colors.g,
+      backgroundColor: mtaColors.g,
       color: props.theme.colors.darkGreen
     },
     lightGreen: {
-      backgroundColor: props.theme.colors.g,
+      backgroundColor: mtaColors.g,
       color: props.theme.colors.darkGreen
     },
     line_1: {
-      backgroundColor: props.theme.colors._123,
+      backgroundColor: mtaColors._123,
       color: props.theme.colors.white
     },
     line_2: {
-      backgroundColor: props.theme.colors._123,
+      backgroundColor: mtaColors._123,
       color: props.theme.colors.white
     },
     line_3: {
-      backgroundColor: props.theme.colors._123,
+      backgroundColor: mtaColors._123,
       color: props.theme.colors.white
     },
     red: {
-      backgroundColor: props.theme.colors._123,
+      backgroundColor: mtaColors._123,
       color: props.theme.colors.white
     },
     line_J: {
-      backgroundColor: props.theme.colors.jz,
+      backgroundColor: mtaColors.jz,
       color: props.theme.colors.white
     },
     line_Z: {
-      backgroundColor: props.theme.colors.jz,
+      backgroundColor: mtaColors.jz,
       color: props.theme.colors.white
     },
     orange: {
-      backgroundColor: props.theme.colors.jz,
+      backgroundColor: mtaColors.jz,
       color: props.theme.colors.white
     },
     line_B: {
-      backgroundColor: props.theme.colors.bdfm,
+      backgroundColor: mtaColors.bdfm,
       color: props.theme.colors.white
     },
     line_D: {
-      backgroundColor: props.theme.colors.bdfm,
+      backgroundColor: mtaColors.bdfm,
       color: props.theme.colors.white
     },
     line_F: {
-      backgroundColor: props.theme.colors.bdfm,
+      backgroundColor: mtaColors.bdfm,
       color: props.theme.colors.white
     },
     line_M: {
-      backgroundColor: props.theme.colors.bdfm,
+      backgroundColor: mtaColors.bdfm,
       color: props.theme.colors.white
     },
     lightOrange: {
-      backgroundColor: props.theme.colors.bdfm,
+      backgroundColor: mtaColors.bdfm,
       color: props.theme.colors.white
     },
     line_N: {
-      backgroundColor: props.theme.colors.nqrw,
+      backgroundColor: mtaColors.nqrw,
       color: props.theme.colors.white
     },
     line_Q: {
-      backgroundColor: props.theme.colors.nqrw,
+      backgroundColor: mtaColors.nqrw,
       color: props.theme.colors.white
     },
     line_R: {
-      backgroundColor: props.theme.colors.nqrw,
+      backgroundColor: mtaColors.nqrw,
       color: props.theme.colors.white
     },
     line_W: {
-      backgroundColor: props.theme.colors.nqrw,
+      backgroundColor: mtaColors.nqrw,
       color: props.theme.colors.white
     },
     yellow: {
-      backgroundColor: props.theme.colors.nqrw,
+      backgroundColor: mtaColors.nqrw,
       color: props.theme.colors.white
     },
     line_7: {
-      backgroundColor: props.theme.colors._7,
+      backgroundColor: mtaColors._7,
       color: props.theme.colors.white
     },
     purple: {
-      backgroundColor: props.theme.colors._7,
+      backgroundColor: mtaColors._7,
       color: props.theme.colors.white
     },
     line_S: {
-      backgroundColor: props.theme.colors.s,
+      backgroundColor: mtaColors.s,
       color: props.theme.colors.white
     },
     gray: {
-      backgroundColor: props.theme.colors.s,
+      backgroundColor: mtaColors.s,
       color: props.theme.colors.white
     },
     line_L: {
-      backgroundColor: props.theme.colors.l,
+      backgroundColor: mtaColors.l,
       color: props.theme.colors.white
     },
     gray50: {
-      backgroundColor: props.theme.colors.l,
+      backgroundColor: mtaColors.l,
       color: props.theme.colors.white
     }
   }
