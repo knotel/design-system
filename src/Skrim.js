@@ -13,9 +13,9 @@ const Skrim = styled.div`
 
 export default class StyledSkrim extends React.Component {
   render () {
-    const { onClick, children } = this.props
+    const { onClick, className, children } = this.props
     return (
-      <Skrim onClick={onClick}>{children}</Skrim>
+      <Skrim className={className} onClick={onClick}>{children}</Skrim>
     )
   }
 }
