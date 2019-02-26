@@ -1,116 +1,73 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Heading Heading component using <Text> component properties 1`] = `
-.c0 {
-  font-size: 24px;
-  margin: 0px;
-  color: #687B8E;
-  font-weight: 400;
-  text-align: center;
-}
-
 <h3
-  className="c0"
-  color="#687B8E"
+  className="kJDkXl"
+  fontFamily="halyard-display"
   fontSize={4}
 />
 `;
 
 exports[`Heading Heading component with default theme font size, when "fontSize" prop not used 1`] = `
-.c0 {
-  font-size: 24px;
-  margin: 0px;
-  font-weight: 400;
-}
-
 <h3
-  className="c0"
+  className="jaeOUv"
+  fontFamily="halyard-display"
   fontSize={4}
 />
 `;
 
 exports[`Heading Heading component with h1-h6 dot-notation 1`] = `
-.c0 {
-  font-size: 48px;
-  margin: 0px;
-}
-
 <h1
-  className="c0"
+  className="dbwvKd"
+  fontFamily="halyard-display"
   fontSize={6}
 />
 `;
 
 exports[`Heading Heading component with h1-h6 dot-notation 2`] = `
-.c0 {
-  font-size: 32px;
-  margin: 0px;
-}
-
 <h2
-  className="c0"
+  className="bHwqdi"
+  fontFamily="halyard-display"
   fontSize={5}
 />
 `;
 
 exports[`Heading Heading component with h1-h6 dot-notation 3`] = `
-.c0 {
-  font-size: 24px;
-  margin: 0px;
-}
-
 <h3
-  className="c0"
+  className="fBUMpS"
+  fontFamily="halyard-display"
   fontSize={4}
 />
 `;
 
 exports[`Heading Heading component with h1-h6 dot-notation 4`] = `
-.c0 {
-  font-size: 20px;
-  margin: 0px;
-}
-
 <h4
-  className="c0"
+  className="QlgPb"
+  fontFamily="halyard-display"
   fontSize={3}
 />
 `;
 
 exports[`Heading Heading component with h1-h6 dot-notation 5`] = `
-.c0 {
-  font-size: 16px;
-  margin: 0px;
-}
-
 <h5
-  className="c0"
+  className="dKnfyI"
+  fontFamily="halyard-display"
   fontSize={2}
 />
 `;
 
 exports[`Heading Heading component with h1-h6 dot-notation 6`] = `
-.c0 {
-  font-size: 12px;
-  margin: 0px;
-  text-transform: uppercase;
-}
-
 <h6
-  className="c0"
+  className="cQpbWn"
+  fontFamily="halyard-display"
   fontSize={0}
 />
 `;
 
 exports[`Heading renders 1`] = `
-.c0 {
-  font-size: 24px;
-  margin: 0px;
-  font-weight: 400;
-}
-
 <h3
-  className="c0"
+  className="jaeOUv"
+  fontFamily="halyard-display"
   fontSize={4}
 />
 `;
