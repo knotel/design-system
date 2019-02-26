@@ -38,6 +38,6 @@ exports[`Text regular prop sets font-weight 1`] = `
 
 exports[`Text renders 1`] = `
 <div
-  className=""
+  className="bpnyOO"
 />
 `;

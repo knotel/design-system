@@ -13,15 +13,8 @@ exports[`Flex justify prop 1`] = `
 `;
 
 exports[`Flex renders 1`] = `
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 <div
-  className="c0"
+  className="eYwxEz"
 />
 `;
 

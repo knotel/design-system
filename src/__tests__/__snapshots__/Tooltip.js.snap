@@ -55,53 +55,6 @@ exports[`Tooltip bottom right 1`] = `
 `;
 
 exports[`Tooltip renders 1`] = `
-.c1 {
-  margin-bottom: 16px;
-  margin-top: 8px;
-  padding: 8px;
-  color: #001833;
-  background-color: #fff;
-  text-align: right;
-}
-
-.c0 {
-  display: inline;
-  box-shadow: 0 0 2px 0 rgba(0,0,0,.08),0 2px 8px 0 rgba(0,0,0,.16);
-  font-size: 12px;
-  position: absolute;
-  border-radius: 2px;
-  box-sizing: border-box;
-  background: #fff;
-  text-align: center;
-  top: 0;
-}
-
-.c0::after {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 0;
-  border-width: 5px;
-  border-style: solid;
-  border-color: transparent transparent #fff #fff;
-  -webkit-transform-origin: 0 0;
-  -ms-transform-origin: 0 0;
-  transform-origin: 0 0;
-  -webkit-transform: rotate(-225deg);
-  -ms-transform: rotate(-225deg);
-  transform: rotate(-225deg);
-  -webkit-transform-origin: 0 0;
-  -ms-transform-origin: 0 0;
-  transform-origin: 0 0;
-  -webkit-transform: rotate(-225deg);
-  -ms-transform: rotate(-225deg);
-  transform: rotate(-225deg);
-  top: 0;
-  right: 16px;
-  margin-right: -10px;
-  box-shadow: -1.41px 1.41px 1px 0 rgba(0,0,0,0.01),-3.66px 3.66px 8px 0 rgba(0,0,0,0.04);
-}
-
 <div
   style={
     Object {
@@ -111,7 +64,7 @@ exports[`Tooltip renders 1`] = `
   }
 >
   <div
-    className="c0 c1"
+    className="gSrMNz"
     color="text"
   >
     A Tooltip

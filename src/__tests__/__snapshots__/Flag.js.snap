@@ -1,110 +1,24 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Flag renders 1`] = `
-.c4 {
-  margin-bottom: -8px;
-  margin-right: -8px;
-  width: 4px;
-  color: #0a0;
-}
-
-.c6 {
-  padding-left: 4px;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  color: #fff;
-  background-color: #0a0;
-}
-
-.c8 {
-  margin-left: -8px;
-  width: 18px;
-  color: #0a0;
-}
-
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: 0px;
-}
-
-.c3 {
-  width: 8px;
-  height: 8px;
-  -webkit-align-self: flex-end;
-  -ms-flex-item-align: end;
-  align-self: flex-end;
-  background-image: linear-gradient(45deg,transparent 50%,rgba(0,0,0,0.5) 50%), linear-gradient(45deg,transparent 50%,green 50%);
-  position: absolute;
-  bottom: 0;
-}
-
-.c7 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  background-color: green;
-  border-radius: 0 0;
-  -webkit-transform: skew(-14deg);
-  -ms-transform: skew(-14deg);
-  transform: skew(-14deg);
-  position: relative;
-  z-index: 1;
-}
-
-.c5 {
-  font-size: px;
-  border-radius: 0 0 0;
-  color: white;
-  background-color: green;
-  z-index: 2;
-}
-
-.c1 {
-  position: relative;
-}
-
-@media screen and (min-width:32em) {
-  .c6 {
-    padding-left: 16px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-  }
-}
-
-@media screen and (min-width:32em) {
-  .c0 {
-    margin-left: -8px;
-  }
-}
-
-@media screen and (max-width:31.99em) {
-  .c2 {
-    display: none;
-  }
-}
-
 <div
-  className="c0"
-  width={undefined}
+  className="lfzUEh"
 >
   <div
-    className="c1 c2 "
+    className="eFCXZH"
   >
     <div
-      className="c3 c4"
+      className="kZTKNt"
       color="green"
       width="4px"
     />
   </div>
   <div
-    className="c5 c6"
+    className="hSTMkY"
     color="white"
   />
   <div
-    className="c7 c8"
+    className="iehOoF"
     color="green"
     width="18px"
   />

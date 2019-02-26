@@ -1,134 +1,38 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`FormField it always renders a label when \`alwaysShowLabel\` is true 1`] = `
-.c4 {
-  margin-left: 8px;
-  margin-right: -32px;
-  margin-top: -12px;
-}
-
-.c7 {
-  margin-left: -32px;
-  margin-top: -12px;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 0px;
-  width: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c5 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-}
-
-.c6 {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  display: block;
-  width: 100%;
-  font-family: inherit;
-  color: inherit;
-  font-size: 14px;
-  background-color: transparent;
-  border-radius: 2px;
-  border-width: 0px;
-  border-style: solid;
-  border-color: #d1d6db;
-  padding-top: 14px;
-  padding-bottom: 14px;
-  padding-left: 12px;
-  padding-right: 12px;
-  margin: 0;
-  border-color: #d1d6db;
-  box-shadow: 0 0 0 1px #d1d6db;
-  margin-top: -20px;
-  padding-left: 40px;
-  padding-right: 40px;
-}
-
-.c6::-webkit-input-placeholder {
-  color: #687B8E;
-}
-
-.c6::-moz-placeholder {
-  color: #687B8E;
-}
-
-.c6:-ms-input-placeholder {
-  color: #687B8E;
-}
-
-.c6::placeholder {
-  color: #687B8E;
-}
-
-.c6::-ms-clear {
-  display: none;
-}
-
-.c6:focus {
-  outline: 0;
-  border-color: #007aff;
-  box-shadow: 0 0 0 2px #007aff;
-}
-
-.c2 {
-  font-size: 10px;
-  -webkit-letter-spacing: 0.2px;
-  -moz-letter-spacing: 0.2px;
-  -ms-letter-spacing: 0.2px;
-  letter-spacing: 0.2px;
-  display: block;
-  width: 100%;
-  margin: 0;
-  margin-top: 6px;
-  padding-left: 40px;
-  font-size: 10px;
-  color: #687B8E;
-  font-weight: 600;
-}
-
-.c0 .c1 {
+.gcBgMW .c0 {
   pointer-events: none;
 }
 
 <div
-  className="c0 c1 "
+  className="c0 gcBgMW"
 >
   <label
-    className="c2"
+    className="SaKWO"
     color="gray"
     fontSize="10px"
     fontWeight="bold"
     htmlFor="with-both-icons"
     style={
-      Object {
-        "animation": "eMLfYp 0.3s",
-      }
+      Array [
+        "
+  animation: fadeIn + ' 0.3s';
+",
+      ]
     }
   >
     A Label
   </label>
   <div
-    className="c3"
+    className="guUZXj"
     width={1}
   >
     <div
-      className="c1 c4"
+      className="c0 cuYQeU"
     >
       <svg
-        className="c5"
+        className="lglHWr"
         fill="currentcolor"
         height={24}
         theme={
@@ -141,88 +45,65 @@ exports[`FormField it always renders a label when \`alwaysShowLabel\` is true 1`
               "0 0 2px 0 rgba(0,0,0,.08),0 8px 32px 0 rgba(0,0,0,.16)",
             ],
             "breakpoints": Array [
-              32,
-              40,
-              48,
-              64,
+              "36em",
+              "48em",
+              "62em",
+              "75em",
             ],
+            "buttons": Object {
+              "primary": Object {
+                "&:hover": Object {
+                  "backgroundColor": "black",
+                },
+                "backgroundColor": "blue",
+                "color": "white",
+              },
+            },
+            "colorStyles": Object {
+              "error": Object {
+                "backgroundColor": "red",
+                "color": "white",
+              },
+              "warning": Object {
+                "backgroundColor": "orange",
+                "color": "black",
+              },
+            },
             "colors": Object {
-              "black": "#000",
-              "blue": "#007aff",
-              "blue0": "#cdf",
-              "blue1": "#cdf",
-              "blue2": "#007aff",
-              "blue3": "#007aff",
-              "blues": Array [
-                "#cdf",
-                "#cdf",
-                "#007aff",
-                "#007aff",
-              ],
-              "gray300": "#d1d6db",
-              "darkBlue": "#049",
-              "gray800": "#364049",
-              "darkGreen": "#060",
-              "darkOrange": "#a50",
-              "darkPurple": "#407",
-              "darkRed": "#800",
-              "gray": "#687B8E",
-              "gray0": "#f6f8fa",
-              "gray1": "#f6f8fa",
-              "gray2": "#687B8E",
-              "gray3": "#687B8E",
-              "green": "#0a0",
-              "green0": "#cec",
-              "green1": "#cec",
-              "green2": "#0a0",
-              "green3": "#0a0",
-              "greens": Array [
-                "#cec",
-                "#cec",
-                "#0a0",
-                "#0a0",
-              ],
-              "lightBlue": "#cdf",
-              "gray50": "#f6f8fa",
-              "lightGreen": "#cec",
-              "lightOrange": "#feb",
-              "lightPurple": "#ecf",
-              "lightRed": "#fcc",
-              "orange": "#fa0",
-              "orange0": "#feb",
-              "orange1": "#feb",
-              "orange2": "#fa0",
-              "orange3": "#fa0",
-              "oranges": Array [
-                "#feb",
-                "#feb",
-                "#fa0",
-                "#fa0",
-              ],
-              "purple": "#70b",
-              "purple0": "#ecf",
-              "purple1": "#ecf",
-              "purple2": "#70b",
-              "purple3": "#70b",
-              "purples": Array [
-                "#ecf",
-                "#ecf",
-                "#70b",
-                "#70b",
-              ],
-              "red": "#c00",
-              "red0": "#fcc",
-              "red1": "#fcc",
-              "red2": "#c00",
-              "red3": "#c00",
-              "reds": Array [
-                "#fcc",
-                "#fcc",
-                "#c00",
-                "#c00",
-              ],
-              "text": "#001833",
-              "white": "#fff",
+              "black": "#000000",
+              "blue": "#1379C1",
+              "blueGray": "#34495E",
+              "blueGreen": "#16A085",
+              "cobalt": "#1379C1",
+              "coral": "#FC5C51",
+              "crimsonRed": "#C0392B",
+              "darkBlue": "#022D41",
+              "darkOrange": "#D35400",
+              "darkPink": "#E74C3C",
+              "darkPurple": "#641F71",
+              "error": "#C0392B",
+              "gray100": "#F0F0F0",
+              "gray200": "#E8E8E8",
+              "gray300": "#D1D1D1",
+              "gray400": "#BABABA",
+              "gray50": "#F7F7F7",
+              "gray500": "#A3A3A3",
+              "gray600": "#666666",
+              "gray700": "#4F4F4F",
+              "gray800": "#333333",
+              "gray900": "#1F1F1F",
+              "lightBlue": "#4F9FD5",
+              "lightOrange": "#F39C12",
+              "mintGreen": "#1ABC9C",
+              "orange": "#E67E22",
+              "primary": "#E74C3C",
+              "purple": "#8B2D9C",
+              "secondary": "#8B2D9C",
+              "success": "#1ABC9C",
+              "text": "#333333",
+              "warning": "#EDB506",
+              "white": "#FFFFFF",
+              "yellow": "#EDB506",
             },
             "duration": Object {
               "fast": "150ms",
@@ -230,7 +111,7 @@ exports[`FormField it always renders a label when \`alwaysShowLabel\` is true 1`
               "slow": "450ms",
               "slowest": "600ms",
             },
-            "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
+            "font": "'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif",
             "fontSizes": Array [
               12,
               14,
@@ -239,28 +120,35 @@ exports[`FormField it always renders a label when \`alwaysShowLabel\` is true 1`
               24,
               32,
               48,
+              60,
             ],
             "fontWeights": Object {
               "bold": 600,
+              "light": 200,
+              "medium": 500,
               "regular": 400,
+              "thin": 300,
             },
+            "headingFont": "halyard-display",
             "letterSpacings": Object {
               "caps": "0.025em",
               "normal": "normal",
             },
+            "light": 200,
             "maxContainerWidth": "1280px",
             "mediaQueries": Array [
-              "@media screen and (min-width:32em)",
-              "@media screen and (min-width:40em)",
+              "@media screen and (min-width:36em)",
               "@media screen and (min-width:48em)",
-              "@media screen and (min-width:64em)",
+              "@media screen and (min-width:62em)",
+              "@media screen and (min-width:75em)",
             ],
+            "medium": 500,
             "radii": Array [
               0,
               2,
               6,
             ],
-            "radius": "2px",
+            "radius": "4px",
             "regular": 400,
             "space": Array [
               0,
@@ -271,6 +159,13 @@ exports[`FormField it always renders a label when \`alwaysShowLabel\` is true 1`
               64,
               128,
             ],
+            "textStyles": Object {
+              "caps": Object {
+                "letterSpacing": "0.2em",
+                "textTransform": "uppercase",
+              },
+            },
+            "thin": 300,
             "timingFunctions": Object {
               "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
               "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
@@ -289,13 +184,13 @@ exports[`FormField it always renders a label when \`alwaysShowLabel\` is true 1`
       >
         <path
           d="M20,4H4C2.9,4,2,4.9,2,6v12c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2V6C22,4.9,21.1,4,20,4z M20,8
-        	l-8,5L4,8V6l8,5l8-5V8z"
+	l-8,5L4,8V6l8,5l8-5V8z"
         />
       </svg>
     </div>
     <input
       aria-label={null}
-      className="c6"
+      className="lkKhuW"
       id="with-both-icons"
       onChange={[Function]}
       style={
@@ -308,10 +203,10 @@ exports[`FormField it always renders a label when \`alwaysShowLabel\` is true 1`
       width={1}
     />
     <div
-      className="c1 c7"
+      className="c0 cItLYW"
     >
       <svg
-        className="c5"
+        className="lglHWr"
         fill="currentcolor"
         height={24}
         theme={
@@ -324,88 +219,65 @@ exports[`FormField it always renders a label when \`alwaysShowLabel\` is true 1`
               "0 0 2px 0 rgba(0,0,0,.08),0 8px 32px 0 rgba(0,0,0,.16)",
             ],
             "breakpoints": Array [
-              32,
-              40,
-              48,
-              64,
+              "36em",
+              "48em",
+              "62em",
+              "75em",
             ],
+            "buttons": Object {
+              "primary": Object {
+                "&:hover": Object {
+                  "backgroundColor": "black",
+                },
+                "backgroundColor": "blue",
+                "color": "white",
+              },
+            },
+            "colorStyles": Object {
+              "error": Object {
+                "backgroundColor": "red",
+                "color": "white",
+              },
+              "warning": Object {
+                "backgroundColor": "orange",
+                "color": "black",
+              },
+            },
             "colors": Object {
-              "black": "#000",
-              "blue": "#007aff",
-              "blue0": "#cdf",
-              "blue1": "#cdf",
-              "blue2": "#007aff",
-              "blue3": "#007aff",
-              "blues": Array [
-                "#cdf",
-                "#cdf",
-                "#007aff",
-                "#007aff",
-              ],
-              "gray300": "#d1d6db",
-              "darkBlue": "#049",
-              "gray800": "#364049",
-              "darkGreen": "#060",
-              "darkOrange": "#a50",
-              "darkPurple": "#407",
-              "darkRed": "#800",
-              "gray": "#687B8E",
-              "gray0": "#f6f8fa",
-              "gray1": "#f6f8fa",
-              "gray2": "#687B8E",
-              "gray3": "#687B8E",
-              "green": "#0a0",
-              "green0": "#cec",
-              "green1": "#cec",
-              "green2": "#0a0",
-              "green3": "#0a0",
-              "greens": Array [
-                "#cec",
-                "#cec",
-                "#0a0",
-                "#0a0",
-              ],
-              "lightBlue": "#cdf",
-              "gray50": "#f6f8fa",
-              "lightGreen": "#cec",
-              "lightOrange": "#feb",
-              "lightPurple": "#ecf",
-              "lightRed": "#fcc",
-              "orange": "#fa0",
-              "orange0": "#feb",
-              "orange1": "#feb",
-              "orange2": "#fa0",
-              "orange3": "#fa0",
-              "oranges": Array [
-                "#feb",
-                "#feb",
-                "#fa0",
-                "#fa0",
-              ],
-              "purple": "#70b",
-              "purple0": "#ecf",
-              "purple1": "#ecf",
-              "purple2": "#70b",
-              "purple3": "#70b",
-              "purples": Array [
-                "#ecf",
-                "#ecf",
-                "#70b",
-                "#70b",
-              ],
-              "red": "#c00",
-              "red0": "#fcc",
-              "red1": "#fcc",
-              "red2": "#c00",
-              "red3": "#c00",
-              "reds": Array [
-                "#fcc",
-                "#fcc",
-                "#c00",
-                "#c00",
-              ],
-              "text": "#001833",
-              "white": "#fff",
+              "black": "#000000",
+              "blue": "#1379C1",
+              "blueGray": "#34495E",
+              "blueGreen": "#16A085",
+              "cobalt": "#1379C1",
+              "coral": "#FC5C51",
+              "crimsonRed": "#C0392B",
+              "darkBlue": "#022D41",
+              "darkOrange": "#D35400",
+              "darkPink": "#E74C3C",
+              "darkPurple": "#641F71",
+              "error": "#C0392B",
+              "gray100": "#F0F0F0",
+              "gray200": "#E8E8E8",
+              "gray300": "#D1D1D1",
+              "gray400": "#BABABA",
+              "gray50": "#F7F7F7",
+              "gray500": "#A3A3A3",
+              "gray600": "#666666",
+              "gray700": "#4F4F4F",
+              "gray800": "#333333",
+              "gray900": "#1F1F1F",
+              "lightBlue": "#4F9FD5",
+              "lightOrange": "#F39C12",
+              "mintGreen": "#1ABC9C",
+              "orange": "#E67E22",
+              "primary": "#E74C3C",
+              "purple": "#8B2D9C",
+              "secondary": "#8B2D9C",
+              "success": "#1ABC9C",
+              "text": "#333333",
+              "warning": "#EDB506",
+              "white": "#FFFFFF",
+              "yellow": "#EDB506",
             },
             "duration": Object {
               "fast": "150ms",
@@ -413,7 +285,7 @@ exports[`FormField it always renders a label when \`alwaysShowLabel\` is true 1`
               "slow": "450ms",
               "slowest": "600ms",
             },
-            "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
+            "font": "'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif",
             "fontSizes": Array [
               12,
               14,
@@ -422,28 +294,35 @@ exports[`FormField it always renders a label when \`alwaysShowLabel\` is true 1`
               24,
               32,
               48,
+              60,
             ],
             "fontWeights": Object {
               "bold": 600,
+              "light": 200,
+              "medium": 500,
               "regular": 400,
+              "thin": 300,
             },
+            "headingFont": "halyard-display",
             "letterSpacings": Object {
               "caps": "0.025em",
               "normal": "normal",
             },
+            "light": 200,
             "maxContainerWidth": "1280px",
             "mediaQueries": Array [
-              "@media screen and (min-width:32em)",
-              "@media screen and (min-width:40em)",
+              "@media screen and (min-width:36em)",
               "@media screen and (min-width:48em)",
-              "@media screen and (min-width:64em)",
+              "@media screen and (min-width:62em)",
+              "@media screen and (min-width:75em)",
             ],
+            "medium": 500,
             "radii": Array [
               0,
               2,
               6,
             ],
-            "radius": "2px",
+            "radius": "4px",
             "regular": 400,
             "space": Array [
               0,
@@ -454,6 +333,13 @@ exports[`FormField it always renders a label when \`alwaysShowLabel\` is true 1`
               64,
               128,
             ],
+            "textStyles": Object {
+              "caps": Object {
+                "letterSpacing": "0.2em",
+                "textTransform": "uppercase",
+              },
+            },
+            "thin": 300,
             "timingFunctions": Object {
               "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
               "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
@@ -472,7 +358,7 @@ exports[`FormField it always renders a label when \`alwaysShowLabel\` is true 1`
       >
         <path
           d="M20,4H4C2.9,4,2,4.9,2,6v12c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2V6C22,4.9,21.1,4,20,4z M20,8
-        	l-8,5L4,8V6l8,5l8-5V8z"
+	l-8,5L4,8V6l8,5l8-5V8z"
         />
       </svg>
     </div>
@@ -1941,97 +1827,22 @@ exports[`FormField it renders a with a right side icon 1`] = `
 `;
 
 exports[`FormField it renders using FormField alias 1`] = `
-.c3 {
-  margin-left: 8px;
-  margin-right: -32px;
-  margin-top: 2px;
-}
-
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 0px;
-  width: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c4 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-}
-
-.c5 {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  display: block;
-  width: 100%;
-  font-family: inherit;
-  color: inherit;
-  font-size: 14px;
-  background-color: transparent;
-  border-radius: 2px;
-  border-width: 0px;
-  border-style: solid;
-  border-color: #d1d6db;
-  padding-top: 14px;
-  padding-bottom: 14px;
-  padding-left: 12px;
-  padding-right: 12px;
-  margin: 0;
-  border-color: #d1d6db;
-  box-shadow: 0 0 0 1px #d1d6db;
-  padding-left: 40px;
-}
-
-.c5::-webkit-input-placeholder {
-  color: #687B8E;
-}
-
-.c5::-moz-placeholder {
-  color: #687B8E;
-}
-
-.c5:-ms-input-placeholder {
-  color: #687B8E;
-}
-
-.c5::placeholder {
-  color: #687B8E;
-}
-
-.c5::-ms-clear {
-  display: none;
-}
-
-.c5:focus {
-  outline: 0;
-  border-color: #007aff;
-  box-shadow: 0 0 0 2px #007aff;
-}
-
-.c0 .c1 {
+.gcBgMW .c0 {
   pointer-events: none;
 }
 
 <div
-  className="c0 c1 "
+  className="c0 gcBgMW"
 >
   <div
-    className="c2"
+    className="guUZXj"
     width={1}
   >
     <div
-      className="c1 c3"
+      className="c0 kZrDqX"
     >
       <svg
-        className="c4"
+        className="lglHWr"
         fill="currentcolor"
         height={24}
         theme={
@@ -2044,88 +1855,65 @@ exports[`FormField it renders using FormField alias 1`] = `
               "0 0 2px 0 rgba(0,0,0,.08),0 8px 32px 0 rgba(0,0,0,.16)",
             ],
             "breakpoints": Array [
-              32,
-              40,
-              48,
-              64,
+              "36em",
+              "48em",
+              "62em",
+              "75em",
             ],
+            "buttons": Object {
+              "primary": Object {
+                "&:hover": Object {
+                  "backgroundColor": "black",
+                },
+                "backgroundColor": "blue",
+                "color": "white",
+              },
+            },
+            "colorStyles": Object {
+              "error": Object {
+                "backgroundColor": "red",
+                "color": "white",
+              },
+              "warning": Object {
+                "backgroundColor": "orange",
+                "color": "black",
+              },
+            },
             "colors": Object {
-              "black": "#000",
-              "blue": "#007aff",
-              "blue0": "#cdf",
-              "blue1": "#cdf",
-              "blue2": "#007aff",
-              "blue3": "#007aff",
-              "blues": Array [
-                "#cdf",
-                "#cdf",
-                "#007aff",
-                "#007aff",
-              ],
-              "gray300": "#d1d6db",
-              "darkBlue": "#049",
-              "gray800": "#364049",
-              "darkGreen": "#060",
-              "darkOrange": "#a50",
-              "darkPurple": "#407",
-              "darkRed": "#800",
-              "gray": "#687B8E",
-              "gray0": "#f6f8fa",
-              "gray1": "#f6f8fa",
-              "gray2": "#687B8E",
-              "gray3": "#687B8E",
-              "green": "#0a0",
-              "green0": "#cec",
-              "green1": "#cec",
-              "green2": "#0a0",
-              "green3": "#0a0",
-              "greens": Array [
-                "#cec",
-                "#cec",
-                "#0a0",
-                "#0a0",
-              ],
-              "lightBlue": "#cdf",
-              "gray50": "#f6f8fa",
-              "lightGreen": "#cec",
-              "lightOrange": "#feb",
-              "lightPurple": "#ecf",
-              "lightRed": "#fcc",
-              "orange": "#fa0",
-              "orange0": "#feb",
-              "orange1": "#feb",
-              "orange2": "#fa0",
-              "orange3": "#fa0",
-              "oranges": Array [
-                "#feb",
-                "#feb",
-                "#fa0",
-                "#fa0",
-              ],
-              "purple": "#70b",
-              "purple0": "#ecf",
-              "purple1": "#ecf",
-              "purple2": "#70b",
-              "purple3": "#70b",
-              "purples": Array [
-                "#ecf",
-                "#ecf",
-                "#70b",
-                "#70b",
-              ],
-              "red": "#c00",
-              "red0": "#fcc",
-              "red1": "#fcc",
-              "red2": "#c00",
-              "red3": "#c00",
-              "reds": Array [
-                "#fcc",
-                "#fcc",
-                "#c00",
-                "#c00",
-              ],
-              "text": "#001833",
-              "white": "#fff",
+              "black": "#000000",
+              "blue": "#1379C1",
+              "blueGray": "#34495E",
+              "blueGreen": "#16A085",
+              "cobalt": "#1379C1",
+              "coral": "#FC5C51",
+              "crimsonRed": "#C0392B",
+              "darkBlue": "#022D41",
+              "darkOrange": "#D35400",
+              "darkPink": "#E74C3C",
+              "darkPurple": "#641F71",
+              "error": "#C0392B",
+              "gray100": "#F0F0F0",
+              "gray200": "#E8E8E8",
+              "gray300": "#D1D1D1",
+              "gray400": "#BABABA",
+              "gray50": "#F7F7F7",
+              "gray500": "#A3A3A3",
+              "gray600": "#666666",
+              "gray700": "#4F4F4F",
+              "gray800": "#333333",
+              "gray900": "#1F1F1F",
+              "lightBlue": "#4F9FD5",
+              "lightOrange": "#F39C12",
+              "mintGreen": "#1ABC9C",
+              "orange": "#E67E22",
+              "primary": "#E74C3C",
+              "purple": "#8B2D9C",
+              "secondary": "#8B2D9C",
+              "success": "#1ABC9C",
+              "text": "#333333",
+              "warning": "#EDB506",
+              "white": "#FFFFFF",
+              "yellow": "#EDB506",
             },
             "duration": Object {
               "fast": "150ms",
@@ -2133,7 +1921,7 @@ exports[`FormField it renders using FormField alias 1`] = `
               "slow": "450ms",
               "slowest": "600ms",
             },
-            "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
+            "font": "'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif",
             "fontSizes": Array [
               12,
               14,
@@ -2142,28 +1930,35 @@ exports[`FormField it renders using FormField alias 1`] = `
               24,
               32,
               48,
+              60,
             ],
             "fontWeights": Object {
               "bold": 600,
+              "light": 200,
+              "medium": 500,
               "regular": 400,
+              "thin": 300,
             },
+            "headingFont": "halyard-display",
             "letterSpacings": Object {
               "caps": "0.025em",
               "normal": "normal",
             },
+            "light": 200,
             "maxContainerWidth": "1280px",
             "mediaQueries": Array [
-              "@media screen and (min-width:32em)",
-              "@media screen and (min-width:40em)",
+              "@media screen and (min-width:36em)",
               "@media screen and (min-width:48em)",
-              "@media screen and (min-width:64em)",
+              "@media screen and (min-width:62em)",
+              "@media screen and (min-width:75em)",
             ],
+            "medium": 500,
             "radii": Array [
               0,
               2,
               6,
             ],
-            "radius": "2px",
+            "radius": "4px",
             "regular": 400,
             "space": Array [
               0,
@@ -2174,6 +1969,13 @@ exports[`FormField it renders using FormField alias 1`] = `
               64,
               128,
             ],
+            "textStyles": Object {
+              "caps": Object {
+                "letterSpacing": "0.2em",
+                "textTransform": "uppercase",
+              },
+            },
+            "thin": 300,
             "timingFunctions": Object {
               "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
               "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
@@ -2192,13 +1994,13 @@ exports[`FormField it renders using FormField alias 1`] = `
       >
         <path
           d="M20,4H4C2.9,4,2,4.9,2,6v12c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2V6C22,4.9,21.1,4,20,4z M20,8
-        	l-8,5L4,8V6l8,5l8-5V8z"
+	l-8,5L4,8V6l8,5l8-5V8z"
         />
       </svg>
     </div>
     <input
       aria-label={null}
-      className="c5"
+      className="AmDeK"
       id="with-left-icon"
       onChange={[Function]}
       style={
@@ -2215,85 +2017,24 @@ exports[`FormField it renders using FormField alias 1`] = `
 `;
 
 exports[`FormField it renders using FormField alias with Select  1`] = `
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 0px;
-  width: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c3 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.c5 {
-  -webkit-flex: none;
-  -ms-flex: none;
-  flex: none;
-  margin-left: -32px;
-  color: #687B8E;
-  pointer-events: none;
-}
-
-.c4 {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  display: block;
-  width: 100%;
-  font-family: inherit;
-  color: inherit;
-  background-color: transparent;
-  border-radius: 2px;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #d1d6db;
-  margin: 0px;
-  padding-left: 8px;
-  padding-right: 32px;
-  padding-top: 14px;
-  padding-bottom: 14px;
-  font-size: 14px;
-}
-
-.c4:focus {
-  outline: none;
-  border-color: #007aff;
-  box-shadow: 0 0 0 1px #007aff;
-}
-
-.c0 .c1 {
+.gcBgMW .c0 {
   pointer-events: none;
 }
 
 <div
-  className="c0 c1 "
+  className="c0 gcBgMW"
 >
   <div
-    className="c2"
+    className="guUZXj"
     width={1}
   >
     <div
-      className="c3"
+      className="hMvwUF"
       width={1}
     >
       <select
         aria-label={null}
-        className="c4"
+        className="iyhjGb hjMWFy"
         fontSize={1}
         id="with-no-options"
         onChange={[Function]}
@@ -2307,10 +2048,10 @@ exports[`FormField it renders using FormField alias with Select  1`] = `
         width={1}
       />
       <svg
-        className="c5"
-        color="gray"
+        className="gLXHTT"
+        color="#A3A3A3"
         fill="currentcolor"
-        height={24}
+        height={12}
         theme={
           Object {
             "bold": 600,
@@ -2321,88 +2062,65 @@ exports[`FormField it renders using FormField alias with Select  1`] = `
               "0 0 2px 0 rgba(0,0,0,.08),0 8px 32px 0 rgba(0,0,0,.16)",
             ],
             "breakpoints": Array [
-              32,
-              40,
-              48,
-              64,
+              "36em",
+              "48em",
+              "62em",
+              "75em",
             ],
+            "buttons": Object {
+              "primary": Object {
+                "&:hover": Object {
+                  "backgroundColor": "black",
+                },
+                "backgroundColor": "blue",
+                "color": "white",
+              },
+            },
+            "colorStyles": Object {
+              "error": Object {
+                "backgroundColor": "red",
+                "color": "white",
+              },
+              "warning": Object {
+                "backgroundColor": "orange",
+                "color": "black",
+              },
+            },
             "colors": Object {
-              "black": "#000",
-              "blue": "#007aff",
-              "blue0": "#cdf",
-              "blue1": "#cdf",
-              "blue2": "#007aff",
-              "blue3": "#007aff",
-              "blues": Array [
-                "#cdf",
-                "#cdf",
-                "#007aff",
-                "#007aff",
-              ],
-              "gray300": "#d1d6db",
-              "darkBlue": "#049",
-              "gray800": "#364049",
-              "darkGreen": "#060",
-              "darkOrange": "#a50",
-              "darkPurple": "#407",
-              "darkRed": "#800",
-              "gray": "#687B8E",
-              "gray0": "#f6f8fa",
-              "gray1": "#f6f8fa",
-              "gray2": "#687B8E",
-              "gray3": "#687B8E",
-              "green": "#0a0",
-              "green0": "#cec",
-              "green1": "#cec",
-              "green2": "#0a0",
-              "green3": "#0a0",
-              "greens": Array [
-                "#cec",
-                "#cec",
-                "#0a0",
-                "#0a0",
-              ],
-              "lightBlue": "#cdf",
-              "gray50": "#f6f8fa",
-              "lightGreen": "#cec",
-              "lightOrange": "#feb",
-              "lightPurple": "#ecf",
-              "lightRed": "#fcc",
-              "orange": "#fa0",
-              "orange0": "#feb",
-              "orange1": "#feb",
-              "orange2": "#fa0",
-              "orange3": "#fa0",
-              "oranges": Array [
-                "#feb",
-                "#feb",
-                "#fa0",
-                "#fa0",
-              ],
-              "purple": "#70b",
-              "purple0": "#ecf",
-              "purple1": "#ecf",
-              "purple2": "#70b",
-              "purple3": "#70b",
-              "purples": Array [
-                "#ecf",
-                "#ecf",
-                "#70b",
-                "#70b",
-              ],
-              "red": "#c00",
-              "red0": "#fcc",
-              "red1": "#fcc",
-              "red2": "#c00",
-              "red3": "#c00",
-              "reds": Array [
-                "#fcc",
-                "#fcc",
-                "#c00",
-                "#c00",
-              ],
-              "text": "#001833",
-              "white": "#fff",
+              "black": "#000000",
+              "blue": "#1379C1",
+              "blueGray": "#34495E",
+              "blueGreen": "#16A085",
+              "cobalt": "#1379C1",
+              "coral": "#FC5C51",
+              "crimsonRed": "#C0392B",
+              "darkBlue": "#022D41",
+              "darkOrange": "#D35400",
+              "darkPink": "#E74C3C",
+              "darkPurple": "#641F71",
+              "error": "#C0392B",
+              "gray100": "#F0F0F0",
+              "gray200": "#E8E8E8",
+              "gray300": "#D1D1D1",
+              "gray400": "#BABABA",
+              "gray50": "#F7F7F7",
+              "gray500": "#A3A3A3",
+              "gray600": "#666666",
+              "gray700": "#4F4F4F",
+              "gray800": "#333333",
+              "gray900": "#1F1F1F",
+              "lightBlue": "#4F9FD5",
+              "lightOrange": "#F39C12",
+              "mintGreen": "#1ABC9C",
+              "orange": "#E67E22",
+              "primary": "#E74C3C",
+              "purple": "#8B2D9C",
+              "secondary": "#8B2D9C",
+              "success": "#1ABC9C",
+              "text": "#333333",
+              "warning": "#EDB506",
+              "white": "#FFFFFF",
+              "yellow": "#EDB506",
             },
             "duration": Object {
               "fast": "150ms",
@@ -2410,7 +2128,7 @@ exports[`FormField it renders using FormField alias with Select  1`] = `
               "slow": "450ms",
               "slowest": "600ms",
             },
-            "font": "'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif",
+            "font": "'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif",
             "fontSizes": Array [
               12,
               14,
@@ -2419,28 +2137,35 @@ exports[`FormField it renders using FormField alias with Select  1`] = `
               24,
               32,
               48,
+              60,
             ],
             "fontWeights": Object {
               "bold": 600,
+              "light": 200,
+              "medium": 500,
               "regular": 400,
+              "thin": 300,
             },
+            "headingFont": "halyard-display",
             "letterSpacings": Object {
               "caps": "0.025em",
               "normal": "normal",
             },
+            "light": 200,
             "maxContainerWidth": "1280px",
             "mediaQueries": Array [
-              "@media screen and (min-width:32em)",
-              "@media screen and (min-width:40em)",
+              "@media screen and (min-width:36em)",
               "@media screen and (min-width:48em)",
-              "@media screen and (min-width:64em)",
+              "@media screen and (min-width:62em)",
+              "@media screen and (min-width:75em)",
             ],
+            "medium": 500,
             "radii": Array [
               0,
               2,
               6,
             ],
-            "radius": "2px",
+            "radius": "4px",
             "regular": 400,
             "space": Array [
               0,
@@ -2451,6 +2176,13 @@ exports[`FormField it renders using FormField alias with Select  1`] = `
               64,
               128,
             ],
+            "textStyles": Object {
+              "caps": Object {
+                "letterSpacing": "0.2em",
+                "textTransform": "uppercase",
+              },
+            },
+            "thin": 300,
             "timingFunctions": Object {
               "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
               "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
@@ -2465,7 +2197,7 @@ exports[`FormField it renders using FormField alias with Select  1`] = `
           }
         }
         viewBox="0 0 24 24"
-        width={24}
+        width={12}
       >
         <path
           d="M7.4,8l4.6,4.6L16.6,8L18,9.4l-6,6l-6-6L7.4,8z"

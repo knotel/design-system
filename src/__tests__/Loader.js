@@ -4,7 +4,9 @@ import { Loader } from '..'
 
 describe('Loader', () => {
   test('renders', () => {
-    const json = renderer.create(<Loader />).toJSON()
+    const json = renderer
+      .create(<Loader />, { disableLifecycleMethods: true })
+      .toJSON()
     expect(json).toMatchSnapshot()
   })
 })

@@ -1,15 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`BackgroundImage renders 1`] = `
-.c0 {
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-color: #687B8E;
-}
-
 <div
-  className="c0"
+  className="dgyGUu"
 />
 `;
 

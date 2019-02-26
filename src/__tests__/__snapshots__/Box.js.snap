@@ -27,7 +27,7 @@ exports[`Box p prop sets padding 1`] = `
 
 exports[`Box renders 1`] = `
 <div
-  className=""
+  className="bJEtZJ"
 />
 `;
 

@@ -4,7 +4,9 @@ import { Slider } from '..'
 
 describe('Slider', () => {
   test('renders', () => {
-    const json = renderer.create(<Slider />).toJSON()
+    const json = renderer
+      .create(<Slider />, { disableLifecycleMethods: true })
+      .toJSON()
     expect(json).toMatchSnapshot()
   })
 })
