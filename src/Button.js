@@ -118,12 +118,12 @@ const Button = styled.button`
 
   &:hover {
     background-color: ${props =>
-    props.disabled
-      ? null
-      : darken(
-        0.075,
-        props.bg ? theme.colors[props.bg] : theme.colors.gray50
-      )};
+      props.disabled
+        ? null
+        : darken(
+            0.075,
+            props.bg ? theme.colors[props.bg] : theme.colors.gray50
+          )};
   }
 
   &:focus {

@@ -26,9 +26,9 @@ const Content = styled(Flex)`
 export default class ImageSpaceCard extends React.Component {
   handleClick = () => {
     this.props.onClick()
-  };
+  }
 
-  render () {
+  render() {
     const {
       id: spaceId,
       className,
@@ -46,12 +46,16 @@ export default class ImageSpaceCard extends React.Component {
       marginX,
       marginY,
       isCollection,
-      liked,
+      liked
     } = this.props
 
     return (
-      <CardWrapper onClick={this.handleClick} mx={marginX}
-        my={marginY} style={this.props.style} className={className}
+      <CardWrapper
+        onClick={this.handleClick}
+        mx={marginX}
+        my={marginY}
+        style={this.props.style}
+        className={className}
       >
         <Image
           imageUrl={imageUrl}
@@ -59,10 +63,9 @@ export default class ImageSpaceCard extends React.Component {
           address={address}
           neighborhood={neighborhood}
           liked={liked}
-          preview={preview} />
-        <Content flexDirection="column">
-          {this.props.children}
-        </Content>
+          preview={preview}
+        />
+        <Content flexDirection="column">{this.props.children}</Content>
       </CardWrapper>
     )
   }
@@ -79,7 +82,7 @@ ImageSpaceCard.defaultProps = {
   baseRent: '$75 sqft',
   sqft: '1200',
   floorNumber: '',
-  onClicked: () => { },
+  onClicked: () => {},
   preview: false,
   liked: false,
   isCollection: false,
@@ -87,7 +90,7 @@ ImageSpaceCard.defaultProps = {
   marginY: 0,
   rentMonth: '',
   monthlyRent: '',
-  style: {},
+  style: {}
 }
 
 ImageSpaceCard.propTypes = {
@@ -107,5 +110,5 @@ ImageSpaceCard.propTypes = {
   marginY: PropTypes.number,
   liked: PropTypes.bool,
   isCollection: PropTypes.bool,
-  style: PropTypes.object,
+  style: PropTypes.object
 }

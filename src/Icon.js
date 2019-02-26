@@ -47,7 +47,7 @@ const Base = ({ name, size, ...props }) => {
       viewBox={icon.viewBox}
       width={size}
       height={size}
-      fill='currentcolor'
+      fill="currentcolor"
     >
       <path d={icon.path} />
     </CleanSvg>
