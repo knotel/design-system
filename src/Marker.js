@@ -85,20 +85,64 @@ const type = props => {
       backgroundColor: props.theme.colors.jz,
       color: props.theme.colors.white
     },
+    line_B: {
+      backgroundColor: props.theme.colors.bdfm,
+      color: props.theme.colors.white
+    },
+    line_D: {
+      backgroundColor: props.theme.colors.bdfm,
+      color: props.theme.colors.white
+    },
+    line_F: {
+      backgroundColor: props.theme.colors.bdfm,
+      color: props.theme.colors.white
+    },
+    line_M: {
+      backgroundColor: props.theme.colors.bdfm,
+      color: props.theme.colors.white
+    },
     lightOrange: {
       backgroundColor: props.theme.colors.bdfm,
+      color: props.theme.colors.white
+    },
+    line_N: {
+      backgroundColor: props.theme.colors.nqrw,
+      color: props.theme.colors.white
+    },
+    line_Q: {
+      backgroundColor: props.theme.colors.nqrw,
+      color: props.theme.colors.white
+    },
+    line_R: {
+      backgroundColor: props.theme.colors.nqrw,
+      color: props.theme.colors.white
+    },
+    line_W: {
+      backgroundColor: props.theme.colors.nqrw,
       color: props.theme.colors.white
     },
     yellow: {
       backgroundColor: props.theme.colors.nqrw,
       color: props.theme.colors.white
     },
+    line_7: {
+      backgroundColor: props.theme.colors._7,
+      color: props.theme.colors.white
+    },
     purple: {
       backgroundColor: props.theme.colors._7,
       color: props.theme.colors.white
     },
+    line_S: {
+      backgroundColor: props.theme.colors.s,
+      color: props.theme.colors.white
+    },
     gray: {
       backgroundColor: props.theme.colors.s,
+      color: props.theme.colors.white
+    },
+    line_L: {
+      backgroundColor: props.theme.colors.l,
       color: props.theme.colors.white
     },
     gray50: {
@@ -115,9 +159,6 @@ const Marker = styled.div`
   font-size: ${props => props.theme.fontSizes[2]}px;
   text-transform: uppercase;
   letter-spacing: ${themeGet('letterSpacings.caps')};
-	width: 30px;
-	height: 30px;
-  line-height: 20px;
 	color: white;
 	text-align: center;
 	font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
