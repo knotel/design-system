@@ -1,6 +1,6 @@
 {
   "name": "@knotel/cinderblock",
-  "version": "0.0.21",
+  "version": "0.0.52",
   "description": "Knotel Design System",
   "main": "dist/index.js",
   "scripts": {
@@ -14,7 +14,7 @@
     "codecov": "codecov",
     "chromatic": "chromatic test --exit-zero-on-changes --storybook-addon --script-name start",
     "standard": "standard",
-    "test": "jest"
+    "test": "NODE_ENV=test jest"
   },
   "author": "Justin Michaliga",
   "contributors": [
@@ -25,57 +25,76 @@
   ],
   "license": "MIT",
   "devDependencies": {
-    "@babel/core": "^7.1.2",
+    "@babel/core": "^7.3.3",
+    "@babel/plugin-proposal-class-properties": "^7.3.3",
+    "@babel/plugin-proposal-object-rest-spread": "^7.3.2",
+    "@babel/plugin-transform-modules-commonjs": "^7.2.0",
+    "@babel/plugin-transform-runtime": "^7.2.0",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/preset-react": "^7.0.0",
+    "@sambego/storybook-state": "^1.3.2",
     "@storybook/addon-actions": "^4.0.2",
     "@storybook/addon-info": "^4.0.2",
     "@storybook/addon-knobs": "^4.0.7",
     "@storybook/addons": "^4.0.7",
     "@storybook/react": "^4.0.2",
-    "@storybook/storybook-deployer": "^2.2.0",
-    "babel-cli": "^6.24.1",
-    "babel-core": "^6.25.0",
-    "babel-jest": "^20.0.3",
-    "babel-loader": "^7.1.5",
-    "babel-plugin-macros": "^2.4.2",
-    "babel-preset-env": "^1.6.0",
-    "babel-preset-react": "^6.24.1",
-    "babel-preset-stage-0": "^6.24.1",
+    "@storybook/storybook-deployer": "^2.8.1",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-loader": "^8.0.5",
     "camelcase": "^4.1.0",
     "codecov": "^2.3.0",
     "enzyme": "^3.1.0",
     "enzyme-adapter-react-15": "^1.0.2",
     "husky": "^0.14.3",
-    "jest": "^20.0.4",
+    "jest": "^24.1.0",
     "jest-styled-components": "^5.0.1",
+    "jest-transform-css": "^2.0.0",
     "lint-staged": "^4.2.3",
     "polished": "^2.3.0",
     "prettier": "^1.7.4",
     "react": "^16.5.2",
     "react-chromatic": "^0.7.10",
     "react-dom": "^16.5.2",
-    "react-test-renderer": "^15.6.1",
+    "react-test-renderer": "16.5.2",
     "recompose": "^0.26.0",
-    "standard": "^10.0.2",
+    "standard": "^12.0.1",
     "styled-components": "^4.0.3",
     "stylis": "^3.4.9",
     "svgi": "^1.1.0"
   },
   "jest": {
+    "transform": {
+      "^.+\\.js$": "babel-jest",
+      ".+\\.(css|styl|less|sass|scss)$": "jest-transform-css"
+    },
+    "setupFilesAfterEnv": [
+      "./test-setup.js"
+    ],
     "coverageReporters": [
-      "text",
       "lcov",
       "html"
     ],
-    "collectCoverage": true,
     "coveragePathIgnorePatterns": [
-      "dist/"
+      "/node_modules/",
+      "dist"
     ],
-    "setupTestFrameworkScriptFile": "./test-setup.js"
+    "coverageThreshold": {
+      "global": {
+        "branches": 90,
+        "functions": 90,
+        "lines": 90,
+        "statements": 90
+      }
+    },
+    "testMatch": [
+      "<rootDir>/src/__tests__/*.js"
+    ]
   },
   "dependencies": {
     "global": "^4.3.2",
     "prop-types": "^15.5.10",
     "rc-slider": "^8.5.0",
+    "react-activity": "^1.2.2",
     "styled-system": "^1.0.8"
   },
   "peerDependencies": {

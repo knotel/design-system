@@ -2,16 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
-import {
-  Checkbox,
-  Text,
-  Box,
-  Heading,
-  Button,
-  OutlineButton,
-  Label,
-  theme
-} from '../src'
+import { Checkbox, Text, Box, Heading, Button, Label, theme } from '../src'
 
 const StyledLabel = styled(Label)`
   cursor: pointer;
@@ -88,9 +79,6 @@ storiesOf('Checkbox', module).add('Checkbox states', () => (
           <Button type="submit">Submit Me</Button>
           <br />
           <br />
-          <OutlineButton color={theme.colors.gray600} type="reset">
-            Reset Me
-          </OutlineButton>
         </fieldset>
       </form>
     </Wrapper>

@@ -31,6 +31,10 @@ const size = props => {
 
 const type = props => {
   const buttonColors = {
+    primary: {
+      backgroundColor: props.theme.colors.primary,
+      color: props.theme.colors.white
+    },
     success: {
       backgroundColor: props.theme.colors.success,
       color: props.theme.colors.white,

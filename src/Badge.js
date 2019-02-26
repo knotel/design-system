@@ -52,7 +52,7 @@ const type = props => {
 }
 
 const Badge = styled.div`
-  border-radius: 99999px;
+  border-radius: 6px;
   display: inline-block;
   font-size: ${props => props.theme.fontSizes[0]}px;
   font-weight: 600;

@@ -16036,6 +16036,164 @@ exports[`Icon instagram renders 1`] = `
 </svg>
 `;
 
+exports[`Icon kLogo renders 1`] = `
+<svg
+  className="lglHWr"
+  fill="currentcolor"
+  height={24}
+  theme={
+    Object {
+      "bold": 600,
+      "boxShadows": Array [
+        "0 0 2px 0 rgba(0,0,0,.08),0 1px 4px 0 rgba(0,0,0,.16)",
+        "0 0 2px 0 rgba(0,0,0,.08),0 2px 8px 0 rgba(0,0,0,.16)",
+        "0 0 2px 0 rgba(0,0,0,.08),0 4px 16px 0 rgba(0,0,0,.16)",
+        "0 0 2px 0 rgba(0,0,0,.08),0 8px 32px 0 rgba(0,0,0,.16)",
+      ],
+      "breakpoints": Array [
+        "36em",
+        "48em",
+        "62em",
+        "75em",
+      ],
+      "buttons": Object {
+        "primary": Object {
+          "&:hover": Object {
+            "backgroundColor": "black",
+          },
+          "backgroundColor": "blue",
+          "color": "white",
+        },
+      },
+      "colorStyles": Object {
+        "error": Object {
+          "backgroundColor": "red",
+          "color": "white",
+        },
+        "warning": Object {
+          "backgroundColor": "orange",
+          "color": "black",
+        },
+      },
+      "colors": Object {
+        "black": "#000000",
+        "blue": "#1379C1",
+        "blueGray": "#34495E",
+        "blueGreen": "#16A085",
+        "cobalt": "#1379C1",
+        "coral": "#FC5C51",
+        "crimsonRed": "#C0392B",
+        "darkBlue": "#022D41",
+        "darkOrange": "#D35400",
+        "darkPink": "#e85063",
+        "darkPurple": "#641F71",
+        "error": "#C0392B",
+        "gray100": "#F0F0F0",
+        "gray200": "#E8E8E8",
+        "gray300": "#D1D1D1",
+        "gray400": "#BABABA",
+        "gray50": "#F7F7F7",
+        "gray500": "#A3A3A3",
+        "gray600": "#666666",
+        "gray700": "#4F4F4F",
+        "gray800": "#333333",
+        "gray900": "#1F1F1F",
+        "lightBlue": "#4F9FD5",
+        "lightOrange": "#F39C12",
+        "mintGreen": "#1ABC9C",
+        "orange": "#E67E22",
+        "primary": "#e85063",
+        "purple": "#8B2D9C",
+        "secondary": "#8B2D9C",
+        "success": "#1ABC9C",
+        "text": "#333333",
+        "warning": "#EDB506",
+        "white": "#FFFFFF",
+        "yellow": "#EDB506",
+      },
+      "duration": Object {
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
+      },
+      "font": "'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif",
+      "fontSizes": Array [
+        12,
+        14,
+        16,
+        20,
+        24,
+        32,
+        48,
+        60,
+      ],
+      "fontWeights": Object {
+        "bold": 600,
+        "light": 200,
+        "medium": 500,
+        "regular": 400,
+        "thin": 300,
+      },
+      "headingFont": "halyard-display",
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
+      },
+      "light": 200,
+      "maxContainerWidth": "1280px",
+      "mediaQueries": Array [
+        "@media screen and (min-width:36em)",
+        "@media screen and (min-width:48em)",
+        "@media screen and (min-width:62em)",
+        "@media screen and (min-width:75em)",
+      ],
+      "medium": 500,
+      "radii": Array [
+        0,
+        2,
+        6,
+      ],
+      "radius": "4px",
+      "regular": 400,
+      "space": Array [
+        0,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+      ],
+      "textStyles": Object {
+        "caps": Object {
+          "letterSpacing": "0.2em",
+          "textTransform": "uppercase",
+        },
+      },
+      "thin": 300,
+      "timingFunctions": Object {
+        "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
+        "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
+        "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
+      },
+    }
+  }
+  viewBox="0 0 48 48"
+  width={24}
+>
+  <path
+    d="M17.6924939,21.4248826 C17.8159806,21.3051643 17.9806295,21.185446 18.1041162,21.0657277 C19.9564165,19.1103286 21.8087167,17.1948357 23.6610169,15.2394366 C23.7845036,15.1197183 24.031477,15 24.1961259,15 C26.0072639,15 27.8595642,15 29.6707022,15 C29.7118644,15 29.7530266,15 29.9176755,15.0399061 C29.3414044,15.6384977 28.7651332,16.157277 28.2300242,16.7159624 C26.5423729,18.3920188 24.8547215,20.1079812 23.1670702,21.8239437 C23.0847458,21.9037559 23.0435835,22.2230047 23.125908,22.342723 C25.2251816,25.0962441 27.3244552,27.8098592 29.4237288,30.5234742 C29.5883777,30.7230047 29.7530266,30.9624413 30,31.2816901 C29.7530266,31.2816901 29.5883777,31.2816901 29.464891,31.2816901 C27.8595642,31.2816901 26.2542373,31.2816901 24.6900726,31.2816901 C24.2784504,31.2816901 23.9903148,31.1619718 23.7433414,30.842723 C22.5084746,29.1267606 21.2324455,27.4507042 19.9975787,25.7746479 C19.5859564,25.2159624 19.5859564,25.2159624 19.0920097,25.7347418 C17.1162228,27.7699531 15.1404358,29.8051643 13.1646489,31.8802817 C13.1234867,31.9201878 13.0823245,31.9600939 13,32 C13,26.3333333 13,20.7464789 13,15.0798122 C14.4818402,15.0798122 16.0048426,15.0798122 17.5690073,15.0798122 C17.5690073,17.1948357 17.5690073,19.3098592 17.5690073,21.4248826 C17.5690073,21.3849765 17.6513317,21.3849765 17.6924939,21.4248826 Z"
+  />
+</svg>
+`;
+
 exports[`Icon key renders 1`] = `
 .c0 {
   -webkit-flex: none;
@@ -16386,6 +16544,177 @@ exports[`Icon kitchenette renders 1`] = `
 </svg>
 `;
 
+exports[`Icon knotelLogo renders 1`] = `
+<svg
+  className="lglHWr"
+  fill="currentcolor"
+  height={24}
+  theme={
+    Object {
+      "bold": 600,
+      "boxShadows": Array [
+        "0 0 2px 0 rgba(0,0,0,.08),0 1px 4px 0 rgba(0,0,0,.16)",
+        "0 0 2px 0 rgba(0,0,0,.08),0 2px 8px 0 rgba(0,0,0,.16)",
+        "0 0 2px 0 rgba(0,0,0,.08),0 4px 16px 0 rgba(0,0,0,.16)",
+        "0 0 2px 0 rgba(0,0,0,.08),0 8px 32px 0 rgba(0,0,0,.16)",
+      ],
+      "breakpoints": Array [
+        "36em",
+        "48em",
+        "62em",
+        "75em",
+      ],
+      "buttons": Object {
+        "primary": Object {
+          "&:hover": Object {
+            "backgroundColor": "black",
+          },
+          "backgroundColor": "blue",
+          "color": "white",
+        },
+      },
+      "colorStyles": Object {
+        "error": Object {
+          "backgroundColor": "red",
+          "color": "white",
+        },
+        "warning": Object {
+          "backgroundColor": "orange",
+          "color": "black",
+        },
+      },
+      "colors": Object {
+        "black": "#000000",
+        "blue": "#1379C1",
+        "blueGray": "#34495E",
+        "blueGreen": "#16A085",
+        "cobalt": "#1379C1",
+        "coral": "#FC5C51",
+        "crimsonRed": "#C0392B",
+        "darkBlue": "#022D41",
+        "darkOrange": "#D35400",
+        "darkPink": "#e85063",
+        "darkPurple": "#641F71",
+        "error": "#C0392B",
+        "gray100": "#F0F0F0",
+        "gray200": "#E8E8E8",
+        "gray300": "#D1D1D1",
+        "gray400": "#BABABA",
+        "gray50": "#F7F7F7",
+        "gray500": "#A3A3A3",
+        "gray600": "#666666",
+        "gray700": "#4F4F4F",
+        "gray800": "#333333",
+        "gray900": "#1F1F1F",
+        "lightBlue": "#4F9FD5",
+        "lightOrange": "#F39C12",
+        "mintGreen": "#1ABC9C",
+        "orange": "#E67E22",
+        "primary": "#e85063",
+        "purple": "#8B2D9C",
+        "secondary": "#8B2D9C",
+        "success": "#1ABC9C",
+        "text": "#333333",
+        "warning": "#EDB506",
+        "white": "#FFFFFF",
+        "yellow": "#EDB506",
+      },
+      "duration": Object {
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
+      },
+      "font": "'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif",
+      "fontSizes": Array [
+        12,
+        14,
+        16,
+        20,
+        24,
+        32,
+        48,
+        60,
+      ],
+      "fontWeights": Object {
+        "bold": 600,
+        "light": 200,
+        "medium": 500,
+        "regular": 400,
+        "thin": 300,
+      },
+      "headingFont": "halyard-display",
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
+      },
+      "light": 200,
+      "maxContainerWidth": "1280px",
+      "mediaQueries": Array [
+        "@media screen and (min-width:36em)",
+        "@media screen and (min-width:48em)",
+        "@media screen and (min-width:62em)",
+        "@media screen and (min-width:75em)",
+      ],
+      "medium": 500,
+      "radii": Array [
+        0,
+        2,
+        6,
+      ],
+      "radius": "4px",
+      "regular": 400,
+      "space": Array [
+        0,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+      ],
+      "textStyles": Object {
+        "caps": Object {
+          "letterSpacing": "0.2em",
+          "textTransform": "uppercase",
+        },
+      },
+      "thin": 300,
+      "timingFunctions": Object {
+        "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
+        "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
+        "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
+      },
+    }
+  }
+  viewBox="0 0 260.3 44.5"
+  width={24}
+>
+  <path
+    d="M58.5,19c0,7.8,0,15.6,0,23.5c-3.6,0-7.1,0-10.6,0c0-13.5,0-27,0-40.6c0.3,0,0.6-0.1,0.9-0.1
+		c2.8,0,5.7,0,8.5,0c0.5,0,1.2,0.3,1.5,0.7c5.4,6.9,10.9,13.9,16.3,20.8c0.4,0.6,1,1.1,1.4,1.6c0.1,0,0.2-0.1,0.3-0.1
+		c0-7.6,0-15.2,0-22.9c3.5,0,7,0,10.5,0c0,13.5,0,27,0,40.7c-3.1,0-6.1,0-9.2,0c-0.3,0-0.6-0.3-0.8-0.6
+		c-5.8-7.3-11.6-14.6-17.5-21.9c-0.3-0.4-0.7-0.8-1.1-1.2C58.6,18.9,58.5,19,58.5,19z M118.2,44.3c-12,0.3-21.9-9.9-22.2-21.4C95.7,10.3,105.7,0,118.2,0c12.7,0.1,22.1,10.1,22.2,22.3
+		C140.4,34.5,130.1,44.5,118.2,44.3z M129.9,22.2c0.1-6.9-5.8-12.2-12.7-11.8c-5.9,0.3-11.1,5.9-10.9,12.1
+		c0.3,6.7,5.8,11.9,12.6,11.4C125.4,33.6,130,28.2,129.9,22.2z M11.4,18c0.3-0.3,0.7-0.6,1-0.9c4.5-4.9,9-9.7,13.5-14.6c0.3-0.3,0.9-0.6,1.3-0.6c4.4,0,8.9,0,13.3,0
+		c0.1,0,0.2,0,0.6,0.1c-1.4,1.5-2.8,2.8-4.1,4.2c-4.1,4.2-8.2,8.5-12.3,12.8c-0.2,0.2-0.3,1-0.1,1.3c5.1,6.9,10.2,13.7,15.3,20.5
+		c0.4,0.5,0.8,1.1,1.4,1.9c-0.6,0-1,0-1.3,0c-3.9,0-7.8,0-11.6,0c-1,0-1.7-0.3-2.3-1.1c-3-4.3-6.1-8.5-9.1-12.7
+		c-1-1.4-1-1.4-2.2-0.1C10,33.9,5.2,39,0.4,44.2c-0.1,0.1-0.2,0.2-0.4,0.3C0,30.3,0,16.3,0,2.1c3.6,0,7.3,0,11.1,0
+		c0,5.3,0,10.6,0,15.9C11.1,17.9,11.3,17.9,11.4,18z M214,17.7c0,3,0,5.9,0,8.9c-4.9,0-9.7,0-14.6,0c0,2.1,0,3.9,0,5.8c0,1,0.7,0.8,1.3,0.8c5.4,0,10.8,0,16.2,0
+		c0.9,0,1.8,0,2.8,0c0,3.1,0,6.2,0,9.3c-0.4,0-0.8,0.1-1.2,0.1c-9.6,0-19.2,0-28.8,0c-1.1,0-1.4-0.3-1.4-1.4c0-12.6,0-25.2,0-37.8
+		c0-0.5,0.1-1,0.1-1.6c10.4,0,20.8,0,31.2,0c0,3.1,0,6.1,0,9.3c-0.4,0-0.8,0-1.2,0c-5.9,0-11.8,0-17.6,0c-1.3,0-1.6,0.4-1.5,1.6
+		c0.1,1.3,0.1,2.6,0,3.8c-0.1,0.9,0.3,1.2,1.2,1.1c4.2,0,8.4,0,12.6,0C213.5,17.7,213.7,17.7,214,17.7z M157,11.9c-4.1,0-8,0-12,0c0-3.4,0-6.6,0-10c11.8,0,23.7,0,35.6,0c0,3.3,0,6.6,0,10c-3.9,0-7.9,0-12,0
+		c0,10.3,0,20.4,0,30.7c-4,0-7.8,0-11.7,0C157,32.3,157,22.2,157,11.9z M242,42.6c-4.3,0-8.5,0-12.7,0c0-13.6,0-27.1,0-40.7c4.2,0,8.4,0,12.7,0C242,15.4,242,28.9,242,42.6z M260.3,42.6c-5.8,0-11.6,0-17.1,0c5.6-5.7,11.3-11.5,17.1-17.5C260.3,30.9,260.3,36.7,260.3,42.6z"
+  />
+</svg>
+`;
+
 exports[`Icon laptop renders 1`] = `
 .c0 {
   -webkit-flex: none;
@@ -16730,6 +17059,164 @@ exports[`Icon lateNight renders 1`] = `
   <path
     d="M12,2c5.5,0,10,4.5,10,10s-4.5,10-10,10S2,17.5,2,12S6.5,2,12,2z M12.8,7c-2.9,0-5.3,2.2-5.3,5
   	s2.4,5,5.3,5c1,0,1.9-0.2,2.7-0.7c-1.6-0.9-2.7-2.5-2.7-4.3s1.1-3.5,2.7-4.3C14.7,7.2,13.8,7,12.8,7z"
+  />
+</svg>
+`;
+
+exports[`Icon like renders 1`] = `
+<svg
+  className="lglHWr"
+  fill="currentcolor"
+  height={24}
+  theme={
+    Object {
+      "bold": 600,
+      "boxShadows": Array [
+        "0 0 2px 0 rgba(0,0,0,.08),0 1px 4px 0 rgba(0,0,0,.16)",
+        "0 0 2px 0 rgba(0,0,0,.08),0 2px 8px 0 rgba(0,0,0,.16)",
+        "0 0 2px 0 rgba(0,0,0,.08),0 4px 16px 0 rgba(0,0,0,.16)",
+        "0 0 2px 0 rgba(0,0,0,.08),0 8px 32px 0 rgba(0,0,0,.16)",
+      ],
+      "breakpoints": Array [
+        "36em",
+        "48em",
+        "62em",
+        "75em",
+      ],
+      "buttons": Object {
+        "primary": Object {
+          "&:hover": Object {
+            "backgroundColor": "black",
+          },
+          "backgroundColor": "blue",
+          "color": "white",
+        },
+      },
+      "colorStyles": Object {
+        "error": Object {
+          "backgroundColor": "red",
+          "color": "white",
+        },
+        "warning": Object {
+          "backgroundColor": "orange",
+          "color": "black",
+        },
+      },
+      "colors": Object {
+        "black": "#000000",
+        "blue": "#1379C1",
+        "blueGray": "#34495E",
+        "blueGreen": "#16A085",
+        "cobalt": "#1379C1",
+        "coral": "#FC5C51",
+        "crimsonRed": "#C0392B",
+        "darkBlue": "#022D41",
+        "darkOrange": "#D35400",
+        "darkPink": "#e85063",
+        "darkPurple": "#641F71",
+        "error": "#C0392B",
+        "gray100": "#F0F0F0",
+        "gray200": "#E8E8E8",
+        "gray300": "#D1D1D1",
+        "gray400": "#BABABA",
+        "gray50": "#F7F7F7",
+        "gray500": "#A3A3A3",
+        "gray600": "#666666",
+        "gray700": "#4F4F4F",
+        "gray800": "#333333",
+        "gray900": "#1F1F1F",
+        "lightBlue": "#4F9FD5",
+        "lightOrange": "#F39C12",
+        "mintGreen": "#1ABC9C",
+        "orange": "#E67E22",
+        "primary": "#e85063",
+        "purple": "#8B2D9C",
+        "secondary": "#8B2D9C",
+        "success": "#1ABC9C",
+        "text": "#333333",
+        "warning": "#EDB506",
+        "white": "#FFFFFF",
+        "yellow": "#EDB506",
+      },
+      "duration": Object {
+        "fast": "150ms",
+        "normal": "300ms",
+        "slow": "450ms",
+        "slowest": "600ms",
+      },
+      "font": "'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif",
+      "fontSizes": Array [
+        12,
+        14,
+        16,
+        20,
+        24,
+        32,
+        48,
+        60,
+      ],
+      "fontWeights": Object {
+        "bold": 600,
+        "light": 200,
+        "medium": 500,
+        "regular": 400,
+        "thin": 300,
+      },
+      "headingFont": "halyard-display",
+      "letterSpacings": Object {
+        "caps": "0.025em",
+        "normal": "normal",
+      },
+      "light": 200,
+      "maxContainerWidth": "1280px",
+      "mediaQueries": Array [
+        "@media screen and (min-width:36em)",
+        "@media screen and (min-width:48em)",
+        "@media screen and (min-width:62em)",
+        "@media screen and (min-width:75em)",
+      ],
+      "medium": 500,
+      "radii": Array [
+        0,
+        2,
+        6,
+      ],
+      "radius": "4px",
+      "regular": 400,
+      "space": Array [
+        0,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+      ],
+      "textStyles": Object {
+        "caps": Object {
+          "letterSpacing": "0.2em",
+          "textTransform": "uppercase",
+        },
+      },
+      "thin": 300,
+      "timingFunctions": Object {
+        "easeIn": "cubic-bezier(0.5, 0, 1, 1)",
+        "easeInOut": "cubic-bezier(0.5, 0, 0.25, 1)",
+        "easeOut": "cubic-bezier(0, 0, 0.25, 1)",
+      },
+      "transitionDelays": Object {
+        "large": "260ms",
+        "medium": "160ms",
+        "small": "60ms",
+        "xLarge": "360ms",
+      },
+    }
+  }
+  viewBox="0 0 42 43"
+  width={24}
+>
+  <path
+    d="M34,41.1 L20,41.1 C17.3574494,41.1 14.6200778,40.4224328 12.0448889,39.1904347 L7.54488894,36.8904347 L8.45511106,35.1095653 L12.9314555,37.3978658 C15.2245117,38.4945448 17.6705506,39.1 20,39.1 L34,39.1 C35.6477153,39.1 37,37.7477153 37,36.1 L37.0077221,35.9759653 L38.9994444,20.042187 C38.9682603,18.4207714 37.6284031,17.1 36,17.1 L25,17.1 L25,10.1 C25,6.84971266 22.9369865,2.69462905 20.4759026,1.25165832 C19.8577481,0.871255556 19,1.36400446 19,2.1 L19,10.4643809 L8.76557811,22.643343 L7.23442189,21.356657 L17,9.73561909 L17,2.1 C17,-0.187408713 19.5619218,-1.65915102 21.5057195,-0.46269797 C24.6035918,1.35329612 27,6.1798648 27,10.1 L27,15.1 L36,15.1 C38.7522847,15.1 41,17.3477153 41,20.1 L40.9922779,20.2240347 L38.999573,36.1656735 C38.9641594,38.8879507 36.7303613,41.1 34,41.1 Z M1,19 L1,39 L7,39 L7,19 L1,19 Z M9,17 L9,41 L-1,41 L-1,17 L9,17 Z"
   />
 </svg>
 `;

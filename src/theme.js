@@ -10,9 +10,11 @@ const addAliases = (arr, aliases) =>
     })
   )
 
-export const breakpoints = [36, 48, 62, 75]
+export const breakpoints = ['36em', '48em', '62em', '75em']
 
-export const mediaQueries = breakpoints.map(createMediaQuery)
+export const mediaBreakpoints = ['36', '48', '62', '75']
+
+export const mediaQueries = mediaBreakpoints.map(createMediaQuery)
 
 const aliases = ['sm', 'md', 'lg', 'xl']
 
@@ -59,7 +61,7 @@ const yellow = '#EDB506'
 const lightOrange = '#F39C12'
 const orange = '#E67E22'
 const darkOrange = '#D35400'
-const darkPink = '#E74C3C'
+const darkPink = '#e85063'
 const crimsonRed = '#C0392B'
 const darkPurple = '#641F71'
 const purple = '#8B2D9C'
@@ -92,7 +94,7 @@ const white = '#FFFFFF'
 
 const text = gray800
 
-const primary = darkBlue
+const primary = darkPink
 const secondary = purple
 
 const success = mintGreen
