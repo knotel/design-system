@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Sentry } from 'react-activity'
-import 'react-activity/dist/react-activity.css'
+// import 'react-activity/dist/react-activity.css'
 import theme from './theme'
 
 export default class Loader extends React.Component {

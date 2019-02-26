@@ -6,8 +6,8 @@ import theme from '../src/theme'
 
 storiesOf('AppBar', module).add('AppBar component', () => (
   <Box bg={theme.colors.gray100} p={2}>
-    <AppBar 
-      inverse={boolean('Inverse', false)} 
+    <AppBar
+      inverse={boolean('Inverse', false)}
       color={text('Color')}
       userPicture="https://randomuser.me/api/portraits/women/75.jpg"
     >
