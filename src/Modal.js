@@ -57,14 +57,22 @@ const StyledCloseButton = styled(CloseButton)`
 
 export default class StyledModal extends React.Component {
   render() {
-    const { children, showModal, closable, onTriggerClose } = this.props
+    const {
+      children,
+      showModal,
+      closable,
+      onTriggerClose,
+      ...props
+    } = this.props
     return (
       <Wrapper showModal={showModal} flexDirection="column" align="center">
-        <StyledSkrim showModal={showModal} onClick={closable && onTriggerClose}>
-          {children}
-        </StyledSkrim>
-        <Modal flexDirection="column" showModal={showModal}>
+        <StyledSkrim
+          showModal={showModal}
+          onClick={closable && onTriggerClose}
+        />
+        <Modal flexDirection="column" showModal={showModal} {...props}>
           {closable && <StyledCloseButton onClick={onTriggerClose} />}
+          {children}
         </Modal>
       </Wrapper>
     )

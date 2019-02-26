@@ -5,7 +5,7 @@ import defaultTheme from './theme'
 
 const borders = ({ color, theme }) => {
   const borderColor = color ? theme.colors[color] : theme.colors.gray300
-  const focusColor = color ? borderColor : theme.colors.primary
+  const focusColor = theme.colors.blueGray
   return {
     'border-color': borderColor,
     'box-shadow': `0 0 0 1px ${borderColor}`,
