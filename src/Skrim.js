@@ -9,6 +9,7 @@ const Skrim = styled.div`
     left: 0;
     right: 0;
     top: 0;
+    z-index: 100;
 `
 
 export default class StyledSkrim extends React.Component {
