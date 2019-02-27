@@ -2,66 +2,36 @@
 
 exports[`Hide renders 1`] = `
 <div
-  className=""
+  className="bNyfRj"
 />
 `;
 
 exports[`Hide renders with lg prop 1`] = `
-@media screen and (min-width:48em) and (max-width:63.99em) {
-  .c0 {
-    display: none;
-  }
-}
-
 <div
-  className="c0 "
+  className="dzMCnZ"
 />
 `;
 
 exports[`Hide renders with md prop 1`] = `
-@media screen and (min-width:40em) and (max-width:47.99em) {
-  .c0 {
-    display: none;
-  }
-}
-
 <div
-  className="c0 "
+  className="dtcwbM"
 />
 `;
 
 exports[`Hide renders with sm prop 1`] = `
-@media screen and (min-width:32em) and (max-width:39.99em) {
-  .c0 {
-    display: none;
-  }
-}
-
 <div
-  className="c0 "
+  className="iRIqFL"
 />
 `;
 
 exports[`Hide renders with xl prop 1`] = `
-@media screen and (min-width:64em) {
-  .c0 {
-    display: none;
-  }
-}
-
 <div
-  className="c0 "
+  className="gEwfJV"
 />
 `;
 
 exports[`Hide renders with xs prop 1`] = `
-@media screen and (max-width:31.99em) {
-  .c0 {
-    display: none;
-  }
-}
-
 <div
-  className="c0 "
+  className="fTehsK"
 />
 `;

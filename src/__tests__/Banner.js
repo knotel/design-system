@@ -6,7 +6,9 @@ import { Banner, Text, theme } from '..'
 
 describe('Banner', () => {
   test('renders with no props other than theme', () => {
-    const json = renderer.create(<Banner />).toJSON()
+    const json = renderer
+      .create(<Banner />, { disableLifecycleMethods: true })
+      .toJSON()
     expect(json).toMatchSnapshot()
   })
 
