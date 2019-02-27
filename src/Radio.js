@@ -1,5 +1,5 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled, { withTheme } from 'styled-components'
 import PropTypes from 'prop-types'
 import { color } from 'styled-system'
 import theme from './theme'
@@ -60,4 +60,4 @@ Radio.defaultProps = {
   theme: theme
 }
 
-export default Radio
+export default withTheme(Radio)

@@ -4,7 +4,9 @@ import { Link } from '..'
 
 describe('Link', () => {
   test('renders', () => {
-    const json = renderer.create(<Link>Dummy</Link>).toJSON()
+    const json = renderer
+      .create(<Link>Dummy</Link>, { disableLifecycleMethods: true })
+      .toJSON()
     expect(json).toMatchSnapshot()
   })
 })

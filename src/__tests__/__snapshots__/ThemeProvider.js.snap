@@ -1,17 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ThemeProvider Base component includes a font 1`] = `
-.c0 {
-  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
-  line-height: 1.4;
-}
-
-.c0 * {
-  box-sizing: border-box;
-}
-
 <div
-  className="c0"
+  className="dNlSoc"
 />
 `;
 
@@ -57,32 +48,6 @@ exports[`ThemeProvider accepts a custom breakpoints prop 1`] = `
 </div>
 `;
 
-exports[`ThemeProvider renders 1`] = `
-.c0 {
-  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
-  line-height: 1.4;
-}
+exports[`ThemeProvider renders 1`] = `null`;
 
-.c0 * {
-  box-sizing: border-box;
-}
-
-<div
-  className="c0"
-/>
-`;
-
-exports[`ThemeProvider renders with legacy prop 1`] = `
-.c0 {
-  font-family: 'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif;
-  line-height: 1.4;
-}
-
-.c0 * {
-  box-sizing: border-box;
-}
-
-<div
-  className="c0"
-/>
-`;
+exports[`ThemeProvider renders with legacy prop 1`] = `null`;

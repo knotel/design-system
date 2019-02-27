@@ -32,7 +32,7 @@ const DesktopLinksWrapper = styled(Flex)`
   ${props => props.theme.mediaQueries['md']} {
     display: block;
   }
-  display: none;  
+  display: none;
 `
 
 const Hamburger = styled(Icon)`
@@ -50,8 +50,8 @@ const Skrim = styled.div`
   ${props => props.theme.mediaQueries['md']} {
     display: none;
   }
-  background: rgba(0,0,0,0.4);
-  display: ${props => props.menuOpen ? 'block' : 'none'};
+  background: rgba(0, 0, 0, 0.4);
+  display: ${props => (props.menuOpen ? 'block' : 'none')};
   position: fixed;
   bottom: 0;
   left: 0;
@@ -68,7 +68,8 @@ const MobileMenu = styled(Flex)`
   position: fixed;
   right: -260px;
   top: 0;
-  transform: ${props => props.menuOpen ? 'translate3d(-260px, 0, 0)' : 'translate3d(0)'};
+  transform: ${props =>
+    props.menuOpen ? 'translate3d(-260px, 0, 0)' : 'translate3d(0)'};
   transition: ${props => props.menuOpen && '0.2s ease-in-out'};
   min-width: 260px;
   z-index: 300;
@@ -96,48 +97,47 @@ const UserPicture = styled.img`
   ${space}
 `
 
-
 export default class AppBarWrapper extends React.Component {
-
   state = {
     menuOpen: false
   }
 
   toggleMenu() {
-    this.setState({menuOpen: !this.state.menuOpen});
+    this.setState({ menuOpen: !this.state.menuOpen })
   }
 
-  render () {
+  render() {
     const LinkComponent = this.props.linkComponent
     const links = this.props.links
     const { beforeLinks, userPicture, sticky, inverse, translucent } = this.props
     const BeforeLinks = beforeLinks
-    const logo =
+    const logo = (
       <Icon
-        name='knotelLogo'
+        name="knotelLogo"
         size={80}
         color={this.props.inverse ? theme.colors.white : theme.colors.text}
       />
+    )
 
-      let DesktopLink
-      let MobileLink
+    let DesktopLink
+    let MobileLink
 
-      if (LinkComponent) {
-          DesktopLink = styled(LinkComponent)`
-            position: relative;
-            top: -3px;
-            ${space}
-        `
-          MobileLink = styled(LinkComponent)`
-            display: block;
-            padding-bottom: ${props => `${props.theme.space[3]}px`};
-            &:hover {
-              cursor: pointer;
-              text-decoration: none !important;
-            }
-            ${fontSize}
-        `
-      }
+    if (LinkComponent) {
+      DesktopLink = styled(LinkComponent)`
+        position: relative;
+        top: -3px;
+        ${space}
+      `
+      MobileLink = styled(LinkComponent)`
+        display: block;
+        padding-bottom: ${props => `${props.theme.space[3]}px`};
+        &:hover {
+          cursor: pointer;
+          text-decoration: none !important;
+        }
+        ${fontSize}
+      `
+    }
 
     let bg
     if (inverse) {
@@ -160,30 +160,70 @@ export default class AppBarWrapper extends React.Component {
         align='center'
         bg={bg}
         color={this.props.inverse ? theme.colors.white : theme.colors.text}
-        justify='space-between'
+        justify="space-between"
         inverse={this.props.inverse}
         sticky={sticky}
       >
         <Box>
-          { LinkComponent ? <LinkComponent to={this.props.logoPath}>{logo}</LinkComponent> : logo}
+          {LinkComponent ? (
+            <LinkComponent to={this.props.logoPath}>{logo}</LinkComponent>
+          ) : (
+            logo
+          )}
         </Box>
         <Flex align="center">
           {beforeLinks && <BeforeLinks />}
-          {links &&
+          {links && (
             <DesktopLinksWrapper>
-              {links.map(link => <DesktopLink key={link.label} px={3} to={link.to} onClick={() => this.toggleMenu()}>{link.label}</DesktopLink>)}
+              {links.map(link => (
+                <DesktopLink
+                  key={link.label}
+                  px={3}
+                  to={link.to}
+                  onClick={() => this.toggleMenu()}
+                >
+                  {link.label}
+                </DesktopLink>
+              ))}
             </DesktopLinksWrapper>
-          }
-          {links &&
+          )}
+          {links && (
             <React.Fragment>
-              <Hamburger onClick={() => this.toggleMenu()}  name='menu' color={theme.colors.gray500} />
-              <Skrim onClick={() => this.toggleMenu()} menuOpen={this.state.menuOpen} />
-              <MobileMenu align="flex-end" flexDirection="column" pt={5} px={5} menuOpen={this.state.menuOpen}>
-                <Close onClick={() => this.toggleMenu()} name="close" color={theme.colors.gray500} />
-                {links && links.map(link => <MobileLink fontSize={3} key={link.label} to={link.to} onClick={() => this.toggleMenu()}>{link.label}</MobileLink>)}
+              <Hamburger
+                onClick={() => this.toggleMenu()}
+                name="menu"
+                color={theme.colors.gray500}
+              />
+              <Skrim
+                onClick={() => this.toggleMenu()}
+                menuOpen={this.state.menuOpen}
+              />
+              <MobileMenu
+                align="flex-end"
+                flexDirection="column"
+                pt={5}
+                px={5}
+                menuOpen={this.state.menuOpen}
+              >
+                <Close
+                  onClick={() => this.toggleMenu()}
+                  name="close"
+                  color={theme.colors.gray500}
+                />
+                {links &&
+                  links.map(link => (
+                    <MobileLink
+                      fontSize={3}
+                      key={link.label}
+                      to={link.to}
+                      onClick={() => this.toggleMenu()}
+                    >
+                      {link.label}
+                    </MobileLink>
+                  ))}
               </MobileMenu>
             </React.Fragment>
-          }
+          )}
           {userPicture && <UserPicture ml={2} src={userPicture} />}
         </Flex>
       </AppBar>
@@ -201,9 +241,11 @@ AppBarWrapper.defaultProps = {
 
 AppBarWrapper.propTypes = {
   inverse: PropTypes.bool,
-  links: PropTypes.arrayOf(PropTypes.shape({
-    to: PropTypes.string,
-    label: PropTypes.string
-  })),
+  links: PropTypes.arrayOf(
+    PropTypes.shape({
+      to: PropTypes.string,
+      label: PropTypes.string
+    })
+  ),
   userPicture: PropTypes.string
 }

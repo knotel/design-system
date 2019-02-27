@@ -4,7 +4,7 @@ const addAliases = (arr, aliases) =>
   aliases.forEach((key, i) =>
     Object.defineProperty(arr, key, {
       enumerable: false,
-      get () {
+      get() {
         return this[i]
       }
     })
@@ -95,7 +95,7 @@ const white = '#FFFFFF'
 const text = gray800
 
 const primary = darkPink
-const secondary = purple
+const secondary = blueGray
 
 const success = mintGreen
 const warning = yellow

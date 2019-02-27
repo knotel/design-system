@@ -1,11 +1,11 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
-import { Slider } from '..'
+import { Loader } from '..'
 
-describe('Slider', () => {
+describe('Loader', () => {
   test('renders', () => {
     const json = renderer
-      .create(<Slider />, { disableLifecycleMethods: true })
+      .create(<Loader />, { disableLifecycleMethods: true })
       .toJSON()
     expect(json).toMatchSnapshot()
   })
