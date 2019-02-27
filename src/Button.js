@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
-import { color, space, theme as themeGet } from 'styled-system'
+import { color, space } from 'styled-system'
 import { darken } from 'polished'
 import theme from './theme'
 
@@ -30,71 +30,33 @@ const size = props => {
 }
 
 const type = props => {
-  const buttonColors = {
-    primary: {
-      backgroundColor: props.theme.colors.primary,
-      color: props.theme.colors.white
-    },
-    success: {
-      backgroundColor: props.theme.colors.success,
-      color: props.theme.colors.white,
-      '&:hover': {
-        backgroundColor: darken(0.075, props.theme.colors.success)
+  switch (props.type) {
+    case 'primary':
+      return {
+        backgroundColor: props.theme.colors.primary,
+        color: props.theme.colors.white
       }
-    },
-    warning: {
-      backgroundColor: props.theme.colors.warning,
-      color: props.theme.colors.white
-    },
-    error: {
-      backgroundColor: props.theme.colors.error,
-      color: props.theme.colors.white
-    },
-    blue: {
-      backgroundColor: props.theme.colors.blue,
-      color: props.theme.colors.white
-    },
-    lightBlue: {
-      backgroundColor: props.theme.colors.lightBlue,
-      color: props.theme.colors.darkBlue
-    },
-    green: {
-      backgroundColor: props.theme.colors.green,
-      color: props.theme.colors.white
-    },
-    lightGreen: {
-      backgroundColor: props.theme.colors.lightGreen,
-      color: props.theme.colors.darkGreen
-    },
-    red: {
-      backgroundColor: props.theme.colors.red,
-      color: props.theme.colors.white
-    },
-    lightRed: {
-      backgroundColor: props.theme.colors.lightRed,
-      color: props.theme.colors.darkRed
-    },
-    orange: {
-      backgroundColor: props.theme.colors.orange,
-      color: props.theme.colors.text
-    },
-    lightOrange: {
-      backgroundColor: props.theme.colors.lightOrange,
-      color: props.theme.colors.darkOrange
-    },
-    gray: {
-      backgroundColor: props.theme.colors.gray600,
-      color: props.theme.colors.white
-    },
-    gray50: {
-      backgroundColor: props.theme.colors.gray50,
-      color: props.theme.colors.text
-    }
+    case 'secondary':
+      return {
+        backgroundColor: props.theme.colors.secondary,
+        color: props.theme.colors.white
+      }
+    case 'success':
+      return {
+        backgroundColor: props.theme.colors.success,
+        color: props.theme.colors.white
+      }
+    case 'danger':
+      return {
+        backgroundColor: props.theme.colors.error,
+        color: props.theme.colors.white
+      }
+    default:
+      return {
+        backgroundColor: props.theme.colors.darkPink,
+        color: props.theme.colors.darkPink
+      }
   }
-  return (
-    !(props.bg && props.color) &&
-    (buttonColors[props.bg] || buttonColors.gray50)
-  )
 }
 
 const fullWidth = props => (props.fullWidth ? { width: '100%' } : null)
@@ -164,7 +126,8 @@ Button.propTypes = {
 }
 
 Button.defaultProps = {
-  theme: theme
+  theme: theme,
+  type: 'primary'
 }
 
 Button.displayName = 'Button'
