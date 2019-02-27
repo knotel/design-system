@@ -69,44 +69,30 @@ const Image = ({
   if (preview) {
     return (
       <PhotoPreview>
-        <ShadowFlex flexDirection='column' justify='space-between'>
-          <Flex justify='flex-end'>
-            {<Status preview={preview} />}
-          </Flex>
-          <Flex flexDirection='column' justify='flex-end'
-            p={3}
-          >
-            <Preview color={'white'} width={'80px'}
-              height={'4px'} />
-            <Preview color={'white'} width={'200px'}
-              height={'12px'} />
+        <ShadowFlex flexDirection="column" justify="space-between">
+          <Flex justify="flex-end">{<Status preview={preview} />}</Flex>
+          <Flex flexDirection="column" justify="flex-end" p={3}>
+            <Preview color={'white'} width={'80px'} height={'4px'} />
+            <Preview color={'white'} width={'200px'} height={'12px'} />
           </Flex>
         </ShadowFlex>
       </PhotoPreview>
     )
   }
   return (
-    <Photo image={imageUrl} height='200px'>
-      <ShadowFlex flexDirection='column' justify='space-between'>
-        <Flex justify='flex-start'>
+    <Photo image={imageUrl} height="200px">
+      <ShadowFlex flexDirection="column" justify="space-between">
+        <Flex justify="flex-start">
           <Status preview={preview} />
         </Flex>
-        <GradientFlex justify='space-between' align='center'
-          p={3}
-        >
-          <Flex flexDirection='column' justify='flex-end'
-            align='flex-start'
-          >
-            <Heading fontSize={1} caps
-              color='white'
-            >
+        <GradientFlex justify="space-between" align="center" p={3}>
+          <Flex flexDirection="column" justify="flex-end" align="flex-start">
+            <Heading fontSize={1} caps color="white">
               {neighborhood}
             </Heading>
-            <Heading
-              fontSize={3}
-              color='white'
-            >
-              {`${address}${floorNumber && ' ,' + transformFloorNumber(floorNumber)}`}
+            <Heading fontSize={3} color="white">
+              {`${address}${floorNumber &&
+                ' ,' + transformFloorNumber(floorNumber)}`}
             </Heading>
           </Flex>
         </GradientFlex>

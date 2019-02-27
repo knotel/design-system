@@ -17,13 +17,9 @@ const Status = React.memo(({ preview, status }) => {
     return null
   }
   return (
-    <StatusTile p={1} justify='center'
-      align='center'
-    >
+    <StatusTile p={1} justify="center" align="center">
       {!preview && <StatusIndicator mr={1} state={status} />}
-      <Heading width='200px' fontSize={1}
-        caps color={theme.colors.gray600}
-      >
+      <Heading width="200px" fontSize={1} caps color={theme.colors.gray600}>
         {preview ? '                 ' : status}
       </Heading>
     </StatusTile>

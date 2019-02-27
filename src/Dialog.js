@@ -13,9 +13,9 @@ const DialogBackground = styled(Box)`
 `
 
 export default class Dialog extends React.Component {
-  render () {
+  render() {
     return (
-      <Dialog align='center' justify='space-between'>
+      <Dialog align="center" justify="space-between">
         <DialogBackground />
         <Card>{this.props.children}</Card>
       </Dialog>
