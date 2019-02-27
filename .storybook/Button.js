@@ -4,24 +4,17 @@ import { withInfo } from '@storybook/addon-info'
 import { Button } from '../src'
 
 storiesOf('Button', module)
-  .add(
-    'Button component',
-    withInfo({
-      inline: true,
-      text: 'Use the <Button /> components to render a primitive button.'
-    })(() => <Button size="large">Button</Button>)
-  )
-  .add('color', () => (
+  .add('Button component', () => (
     <div>
-      <Button mr={2}>Button</Button>
-      <Button bg="success" mr={2}>
+      <Button mr={2}>Primary</Button>
+      <Button type="secondary" mr={2}>
+        Secondary
+      </Button>
+      <Button type="success" mr={2}>
         Success
       </Button>
-      <Button bg="warning" mr={2}>
-        Button
-      </Button>
-      <Button bg="error" mr={2}>
-        Error
+      <Button type="danger" mr={2}>
+        Danger
       </Button>
     </div>
   ))
