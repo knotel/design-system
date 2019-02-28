@@ -19,6 +19,13 @@ const AppBar = styled(Flex)`
     color: ${props =>
       props.inverse ? props.theme.colors.white : props.theme.colors.text};
   }
+  ${props => props.sticky && `
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 50;
+  `}
 `
 
 const DesktopLinksWrapper = styled(Flex)`
@@ -102,7 +109,7 @@ export default class AppBarWrapper extends React.Component {
   render() {
     const LinkComponent = this.props.linkComponent
     const links = this.props.links
-    const { beforeLinks, userPicture } = this.props
+    const { beforeLinks, userPicture, sticky, inverse, translucent } = this.props
     const BeforeLinks = beforeLinks
     const logo = (
       <Icon
@@ -132,13 +139,30 @@ export default class AppBarWrapper extends React.Component {
       `
     }
 
+    let bg
+    if (inverse) {
+      bg =  this.props.color
+    } else if (translucent) {
+      bg = 'rgba(255,255,255,0.98)'
+    } else {
+      bg = theme.colors.white
+    }
+
+    let color
+    if (inverse) {
+      color = theme.colors.white
+    } else {
+      color = theme.colors.text
+    }    
+
     return (
       <AppBar
-        align="center"
-        bg={this.props.inverse ? this.props.color : theme.colors.white}
+        align='center'
+        bg={bg}
         color={this.props.inverse ? theme.colors.white : theme.colors.text}
         justify="space-between"
         inverse={this.props.inverse}
+        sticky={sticky}
       >
         <Box>
           {LinkComponent ? (
