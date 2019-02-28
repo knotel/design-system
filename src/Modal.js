@@ -16,6 +16,7 @@ const Wrapper = styled(Flex)`
   right: 0;
   top: 0;
   visibility: ${props => (props.showModal ? 'visible' : 'hidden')};
+  z-index: ${props => props.theme.zIndexes.modalWrapper};
 `
 
 const Modal = styled(Card)`
@@ -29,7 +30,7 @@ const Modal = styled(Card)`
   right: 0;
   top: 0;
   visibility: ${props => (props.showModal ? 'visible' : 'hidden')};
-  z-index: 200;
+  z-index: ${props => props.theme.zIndexes.modal};
   ${props => props.theme.mediaQueries['md']} {
     border-radius: 2px;
     bottom: initial;
@@ -56,7 +57,7 @@ const StyledCloseButton = styled(CloseButton)`
 `
 
 export default class StyledModal extends React.Component {
-  render() {
+  render () {
     const {
       children,
       showModal,
@@ -65,12 +66,12 @@ export default class StyledModal extends React.Component {
       ...props
     } = this.props
     return (
-      <Wrapper showModal={showModal} flexDirection="column" align="center">
+      <Wrapper showModal={showModal} flexDirection='column' align='center'>
         <StyledSkrim
           showModal={showModal}
           onClick={closable && onTriggerClose}
         />
-        <Modal flexDirection="column" showModal={showModal} {...props}>
+        <Modal flexDirection='column' showModal={showModal} {...props}>
           {closable && <StyledCloseButton onClick={onTriggerClose} />}
           {children}
         </Modal>

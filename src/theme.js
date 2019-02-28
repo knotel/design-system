@@ -4,7 +4,7 @@ const addAliases = (arr, aliases) =>
   aliases.forEach((key, i) =>
     Object.defineProperty(arr, key, {
       enumerable: false,
-      get() {
+      get () {
         return this[i]
       }
     })
@@ -181,6 +181,14 @@ const transitionDelays = {
   xLarge: `360ms`
 }
 
+const zIndexes = {
+  stickyNav: 100,
+  skrim: 200,
+  modalWrapper: 300,
+  mobileMenu: 400,
+  modal: 500
+}
+
 const theme = {
   breakpoints,
   mediaQueries,
@@ -203,6 +211,7 @@ const theme = {
   duration,
   timingFunctions,
   transitionDelays,
+  zIndexes,
   textStyles: {
     caps: {
       textTransform: 'uppercase',

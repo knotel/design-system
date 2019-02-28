@@ -9,10 +9,11 @@ const Skrim = styled.div`
   left: 0;
   right: 0;
   top: 0;
+  z-index: ${props => props.theme.zIndexes.skrim};
 `
 
 export default class StyledSkrim extends React.Component {
-  render() {
+  render () {
     const { onClick, className, children } = this.props
     return (
       <Skrim className={className} onClick={onClick}>
