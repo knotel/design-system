@@ -158,6 +158,7 @@ const Marker = styled.div`
   display: inline-block;
   width: ${props => props.theme.fontSizes[4]}px;
   height: ${props => props.theme.fontSizes[4]}px;
+  line-height: ${props => props.theme.fontSizes[4]}px;
   font-size: ${props => props.theme.fontSizes[2]}px;
   text-transform: uppercase;
   letter-spacing: ${themeGet('letterSpacings.caps')};
