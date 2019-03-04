@@ -156,10 +156,12 @@ const type = props => {
 const Marker = styled.div`
   border-radius: 50%;
   display: inline-block;
+  width: ${props => props.theme.fontSizes[4]}px;
+  height: ${props => props.theme.fontSizes[4]}px;
   font-size: ${props => props.theme.fontSizes[2]}px;
   text-transform: uppercase;
   letter-spacing: ${themeGet('letterSpacings.caps')};
-	color: white;
+	color: grey;
 	text-align: center;
 	font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 	font-weight: 700;
