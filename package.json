@@ -1,6 +1,6 @@
 {
   "name": "@knotel/cinderblock",
-  "version": "0.0.60",
+  "version": "0.0.62",
   "description": "Knotel Design System",
   "main": "dist/index.js",
   "scripts": {
@@ -8,7 +8,7 @@
     "precommit": "lint-staged",
     "start": "start-storybook -p 8000 -c .storybook",
     "icons": "node scripts/parse-icons",
-    "deploy": "storybook-to-ghpages",
+    "deployer": "storybook-to-ghpages",
     "storybook": "build-storybook -c .storybook -o docs/out/storybook",
     "coverage": "jest --coverage",
     "codecov": "codecov",
@@ -94,7 +94,6 @@
     ]
   },
   "dependencies": {
-    "@turf/turf": "^5.1.6",
     "global": "^4.3.2",
     "polished": "^2.3.0",
     "prop-types": "^15.5.10",
