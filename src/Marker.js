@@ -154,6 +154,7 @@ const type = props => {
 }
 
 const Marker = styled.div`
+  box-sizing: border-box;
   border-radius: 50%;
   display: inline-block;
   width: ${props => props.theme.fontSizes[5]}px;
