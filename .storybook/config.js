@@ -9,6 +9,7 @@ createGlobalStyle([], {
     boxSizing: 'border-box'
   },
   body: {
+    background: 'red',
     lineHeight: 1.5,
     fontFamily: 'Open Sans',
     margin: 0

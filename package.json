@@ -8,7 +8,7 @@
     "precommit": "lint-staged",
     "start": "start-storybook -p 8000 -c .storybook",
     "icons": "node scripts/parse-icons",
-    "deployer": "storybook-to-ghpages",
+    "deploy": "storybook-to-ghpages",
     "storybook": "build-storybook -c .storybook -o docs/out/storybook",
     "coverage": "jest --coverage",
     "codecov": "codecov",
