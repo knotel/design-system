@@ -1,4 +1,4 @@
-import * as DS from 'pcln-design-system'
+// import * as DS from 'pcln-design-system'
 import { Heading, Text, Link, BlockLink, Button } from 'pcln-design-system'
 import styled from 'styled-components'
 import { space, fontSize, color, theme } from 'styled-system'
@@ -11,6 +11,7 @@ const RouterLink = styled(mdxDocsComponents.a)(
       textDecoration: 'underline'
     }
   },
+
   color
 )
 
@@ -90,8 +91,8 @@ Code.defaultProps = {
 
 export const ButtonLink = Button.withComponent('a')
 
+//   ...DS,
 const components = {
-  ...DS,
   h1: heading('h1'),
   h2: heading('h2'),
   h3: heading('h3'),
