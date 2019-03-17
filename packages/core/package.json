@@ -7,7 +7,8 @@
   "scripts": {
     "prepare": "rollup --config",
     "clean": "rm -rf node_modules dist",
-    "test": "jest"
+    "test": "jest",
+    "deploy-storybook": "storybook-to-ghpages"
   },
   "author": "Priceline",
   "contributors": [
@@ -34,6 +35,7 @@
   ],
   "license": "MIT",
   "devDependencies": {
+    "@storybook/storybook-deployer": "^2.8.1",
     "camelcase": "^5.0.0",
     "jest": "^24.1.0",
     "react": "^16.8.2",
@@ -50,8 +52,10 @@
     ]
   },
   "dependencies": {
+    "global": "^4.3.2",
     "pcln-icons": "^2.0.1",
     "prop-types": "^15.7.2",
+    "rollup": "^1.6.0",
     "styled-system": "^3.2.1"
   },
   "peerDependencies": {
