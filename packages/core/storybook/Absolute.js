@@ -27,7 +27,7 @@ storiesOf('Absolute', module)
   .add('Over an image', () => (
     <Relative width={1 / 2}>
       <Absolute top={8} left={0}>
-        <Flag>Hello Flag</Flag>
+        <Flag>Hello</Flag>
       </Absolute>
       <Image src="https://www.priceline.com/home/public/assets/images/photos/photo-aruba.jpg" />
     </Relative>
