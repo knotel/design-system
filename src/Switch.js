@@ -34,7 +34,7 @@ export default class Switch extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      selected: props.start || 0
+      selected: props.start || false
     }
   }
 
@@ -52,8 +52,8 @@ export default class Switch extends React.Component {
       <Flex>
         <SwitchItem
           p={3}
-          onClick={() => this._switch(0)}
-          selected={this.state.selected === 0}
+          onClick={() => this._switch(false)}
+          selected={this.state.selected === false}
           start={true}
         >
           {icons ? (
@@ -72,8 +72,8 @@ export default class Switch extends React.Component {
         </SwitchItem>
         <SwitchItem
           p={3}
-          onClick={() => this._switch(1)}
-          selected={this.state.selected === 1}
+          onClick={() => this._switch(true)}
+          selected={this.state.selected === true}
           end={true}
         >
           {icons ? (
