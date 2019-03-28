@@ -34,13 +34,13 @@ export default class Switch extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      selected: props.start || 0
+      selected: props.start || false
     }
   }
 
   _switch = index => {
     if (this.state.selected === index) return
-    this.setState({ selected: index })
+    this.setState({ selected: index }, () => console.log(this.state.selected))
     if (this.props.onChange) this.props.onChange(index)
   }
 
@@ -52,19 +52,19 @@ export default class Switch extends React.Component {
       <Flex>
         <SwitchItem
           p={3}
-          onClick={() => this._switch(0)}
-          selected={this.state.selected === 0}
+          onClick={() => this._switch(true)}
+          selected={this.state.selected === true}
           start={true}
         >
           {icons ? (
             <Icon
               name={icons[0]}
-              color={this.state.selected === 0 ? 'white' : theme.colors.primary}
+              color={this.state.selected === true ? 'white' : theme.colors.primary}
             />
           ) : (
             <Heading
               fontSize={2}
-              color={this.state.selected === 0 ? 'white' : theme.colors.primary}
+              color={this.state.selected === true ? 'white' : theme.colors.primary}
             >
               {labels[0]}
             </Heading>
@@ -72,21 +72,21 @@ export default class Switch extends React.Component {
         </SwitchItem>
         <SwitchItem
           p={3}
-          onClick={() => this._switch(1)}
-          selected={this.state.selected === 1}
+          onClick={() => this._switch(false)}
+          selected={this.state.selected === false}
           end={true}
         >
           {icons ? (
             <Icon
               name={icons[1]}
-              color={this.state.selected === 1 ? 'white' : theme.colors.primary}
+              color={this.state.selected === false ? 'white' : theme.colors.primary}
             />
           ) : (
             <Heading
               fontSize={2}
-              color={this.state.selected === 1 ? 'white' : theme.colors.primary}
+              color={this.state.selected === false ? 'white' : theme.colors.primary}
             >
-              {labels[1]}
+              {labels[1]} 
             </Heading>
           )}
         </SwitchItem>

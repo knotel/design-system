@@ -31,7 +31,7 @@ Heading.h2.defaultProps = {
 
 Heading.h3 = Heading.withComponent('h3')
 Heading.h3.defaultProps = {
-  regular: true,
+  medium: true,
   fontSize: 4,
   m: 0,
   fontFamily: theme.headingFont
