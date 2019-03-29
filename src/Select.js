@@ -61,16 +61,18 @@ SelectBase.defaultProps = {
   py: 14
 }
 
-const Select = styled(props => (
-  <Flex width={1} align="center">
-    <SelectBase {...props} />
+const Select = styled(props => {
+  var { className, ...rest } = props
+
+  return <Flex width={1} align='center' className={className}>
+    <SelectBase {...rest} />
     <ClickableIcon
       ml={-32}
-      name="chevronDown"
+      name='chevronDown'
       color={theme.colors.gray500}
       size={12}
     />
   </Flex>
-))``
+})``
 
 export default Select

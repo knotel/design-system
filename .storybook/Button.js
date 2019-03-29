@@ -13,8 +13,8 @@ storiesOf('Button', module)
       <Button type="success" mr={2}>
         Success
       </Button>
-      <Button type="danger" mr={2}>
-        Danger
+      <Button type="error" mr={2}>
+        Error
       </Button>
     </div>
   ))
