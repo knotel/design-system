@@ -33,26 +33,31 @@ const type = props => {
   switch (props.type) {
     case 'primary':
       return {
+        border: `2px solid ${props.theme.colors.primary}`,
         backgroundColor: props.theme.colors.primary,
         color: props.theme.colors.white
       }
     case 'secondary':
       return {
+        border: `2px solid ${props.theme.colors.secondary}`,
         backgroundColor: props.theme.colors.secondary,
         color: props.theme.colors.white
       }
     case 'success':
       return {
+        border: `2px solid ${props.theme.colors.success}`,
         backgroundColor: props.theme.colors.success,
         color: props.theme.colors.white
       }
-    case 'danger':
+    case 'error':
       return {
+        border: `2px solid ${props.theme.colors.error}`,
         backgroundColor: props.theme.colors.error,
         color: props.theme.colors.white
       }
     default:
       return {
+        border: `2px solid ${props.theme.colors.darkPink}`,
         backgroundColor: props.theme.colors.darkPink,
         color: props.theme.colors.darkPink
       }
@@ -80,12 +85,19 @@ const Button = styled.button`
 
   &:hover {
     background-color: ${props =>
-      props.disabled
-        ? null
-        : darken(
-            0.075,
-            props.bg ? theme.colors[props.bg] : theme.colors.gray50
-          )};
+    props.disabled
+      ? null
+      : darken(
+        0.075,
+        props.type ? theme.colors[props.type] : theme.colors.gray50
+      )}
+    border-color: ${props =>
+    props.disabled
+      ? null
+      : darken(
+        0.075,
+        props.type ? theme.colors[props.type] : theme.colors.gray50
+      )}
   }
 
   &:focus {
