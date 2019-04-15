@@ -10,7 +10,7 @@ storiesOf('FluidText', module)
       inline: true,
       text:
         'A low-level component for setting font-size, typographic styles, margin, and color'
-    })(() => <Text m={3}>Hello</Text>)
+    })(() => <FluidText m={3}>Hello</FluidText>)
   )
   .add('fontSize', () => (
     <div>

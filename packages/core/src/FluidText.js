@@ -28,24 +28,20 @@ export const regular = props =>
 export const bold = props =>
   props.bold ? { fontWeight: props.theme.bold } : null
 
-const fluidStyles = {
-  ...fluidRange(
-    {
-      prop: 'fontSize',
-      fromSize: props.theme.fontSizes[0],
-      toSize: props.theme.s[5]
-    },
-    props.theme.mediaQueries[0],
-    props.theme.mediaQueries[3]
-  )
-}
-
 const FluidText = mapProps(({ align, ...props }) => ({
   textAlign: align,
   ...props
 }))(styled.div`
   ${textStyle}
-  ${fluidStyles}
+  ${fluidRange(
+    {
+      prop: 'fontSize',
+      fromSize: '12px',
+      toSize: '60px'
+    },
+    '320px',
+    '960px'
+  )}
   ${fontWeight}
   ${textAlign}
   ${lineHeight}
@@ -76,8 +72,8 @@ FluidText.defaultProps = {
   theme: theme
 }
 
-FluidText.span = Text.withComponent('span')
-FluidText.p = Text.withComponent('p')
-FluidText.s = Text.withComponent('s')
+FluidText.span = FluidText.withComponent('span')
+FluidText.p = FluidText.withComponent('p')
+FluidText.s = FluidText.withComponent('s')
 
 export default FluidText
