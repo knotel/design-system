@@ -75,5 +75,8 @@
       "prettier --no-semi --single-quote --write",
       "git add"
     ]
+  },
+  "dependencies": {
+    "polished": "^3.2.0"
   }
 }
