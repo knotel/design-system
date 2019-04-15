@@ -10,7 +10,7 @@
     "test": "jest",
     "coverage": "jest --coverage",
     "codecov": "npx codecov",
-    "start": "start-storybook -p 8000 -c storybook",
+    "start": "start-storybook -p 8000 -c .storybook",
     "storybook": "build-storybook -c .storybook -o docs/out/storybook",
     "deploy-storybook": "storybook-to-ghpages"
   },
