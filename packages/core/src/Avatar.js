@@ -1,35 +1,34 @@
-import React from 'react'
-import PropTypes from 'prop-types'
 import styled from 'styled-components'
-
+import PropTypes from 'prop-types'
+import { width, height } from 'styled-system'
+import theme from './theme'
 import BackgroundImage from './BackgroundImage'
 
-const AvatarImage = styled(BackgroundImage)`
+const image = props =>
+  props.image ? { backgroundImage: `url(${props.image})` } : null
+
+const Avatar = styled(BackgroundImage)`
   border-radius: 50%;
   cursor: pointer;
-  border: 1px solid #ccc;
+  background-color: ${props => props.theme.colors.lightGray};
+  ${image} ${height} ${width};
 `
+const numberStringOrArray = PropTypes.oneOfType([
+  PropTypes.number,
+  PropTypes.string,
+  PropTypes.array
+])
 
-export default class Avatar extends React.Component {
-  render() {
-    return (
-      <AvatarImage
-        image={this.props.imageUrl}
-        height={`${this.props.size}px`}
-        width={`${this.props.size}px`}
-      />
-    )
-  }
+Avatar.propTypes = {
+  image: PropTypes.string,
+  width: numberStringOrArray,
+  height: numberStringOrArray
+}
+
+Avatar.defaultProps = {
+  theme: theme
 }
 
 Avatar.displayName = 'Avatar'
 
-Avatar.defaultProps = {
-  imageUrl: `https://images.globest.com/contrib/content/uploads/sites/409/2018/10/Amol-Sarva.jpg`,
-  size: 48
-}
-
-Avatar.propTypes = {
-  imageUrl: PropTypes.string,
-  size: PropTypes.number
-}
+export default Avatar
