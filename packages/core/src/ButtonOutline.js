@@ -22,6 +22,11 @@ const type = props => {
         border: `2px solid ${props.theme.colors.success}`,
         color: props.theme.colors.success
       }
+    case 'danger':
+      return {
+        border: `2px solid ${props.theme.colors.danger}`,
+        color: props.theme.colors.danger
+      }
     case 'error':
       return {
         border: `2px solid ${props.theme.colors.error}`,
@@ -46,14 +51,14 @@ const ButtonOutline = styled(Button)`
         ? null
         : darken(
             0.075,
-            props.type ? theme.colors[props.type] : theme.colors.gray50
+            props.type ? theme.colors[props.type] : theme.colors.gray
           )}
     color: ${props =>
       props.disabled
         ? null
         : darken(
             0.075,
-            props.type ? theme.colors[props.type] : theme.colors.gray50
+            props.type ? theme.colors[props.type] : theme.colors.gray
           )}
   }
 `

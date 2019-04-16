@@ -4,7 +4,7 @@ import { withInfo } from '@storybook/addon-info'
 import { ButtonOutline } from '../src'
 
 storiesOf('ButtonOutline', module)
-  .add('ButtoOutline component', () => (
+  .add('ButtonOutline component', () => (
     <div>
       <ButtonOutline mr={2}>Primary</ButtonOutline>
       <ButtonOutline type="secondary" mr={2}>

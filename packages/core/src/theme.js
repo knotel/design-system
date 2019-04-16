@@ -147,6 +147,13 @@ const lightYellow = '#fff3c0'
 const darkPurple = purple
 const lightOrange = orange
 
+const error = red
+const success = green
+const danger = darkOrange
+
+const primary = blue
+const secondary = purple
+
 const colors = {
   black,
   white,
@@ -170,6 +177,13 @@ const colors = {
   lightPurple,
   yellow,
   lightYellow,
+
+  // contextual
+  success,
+  error,
+  danger,
+  secondary,
+  primary,
 
   // deprecated
   lightOrange,

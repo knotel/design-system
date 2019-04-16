@@ -21,7 +21,7 @@ const type = props => {
       }
     case 'danger':
       return {
-        color: props.theme.colors.error
+        color: props.theme.colors.danger
       }
     default:
       return {
@@ -32,7 +32,7 @@ const type = props => {
 
 const ButtonGhost = styled(ButtonOutline)`
   background: ${theme.colors.white};
-  border: ${props => `2px solid ${props.theme.colors.gray200}`};
+  border: ${props => `2px solid ${props.type.color}`};
   ${type}
 `
 
