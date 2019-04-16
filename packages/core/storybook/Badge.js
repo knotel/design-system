@@ -1,7 +1,8 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { withInfo } from '@storybook/addon-info'
-import { Badge } from '../src'
+import { action } from '@storybook/addon-actions'
+import { Badge, CloseButton } from '../src'
 
 storiesOf('Badge', module)
   .add(
@@ -41,5 +42,11 @@ storiesOf('Badge', module)
   .add('lightBlue and text (custom)', () => (
     <Badge bg="lightBlue" color="text">
       lightBlue and text (custom)
+    </Badge>
+  ))
+  .add('dismissable', () => (
+    <Badge bg="lightRed" color="text">
+      Category
+      <CloseButton size={16} onClick={action('clicked')} />
     </Badge>
   ))
