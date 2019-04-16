@@ -37,7 +37,7 @@ const FluidText = mapProps(({ align, ...props }) => ({
     {
       prop: 'fontSize',
       fromSize: '12px',
-      toSize: '60px'
+      toSize: '70px'
     },
     '320px',
     '960px'

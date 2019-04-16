@@ -24,6 +24,12 @@ export const space = [0, 4, 8, 16, 32, 64, 128]
 export const font = `'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif`
 
 export const fontSizes = [12, 14, 16, 20, 24, 32, 40, 56, 72]
+export const fontSizeTypes = {
+  tiny: fontSizes[0],
+  small: fontSizes[1],
+  medium: fontSizes[3],
+  large: fontSizes[6]
+}
 
 export const medium = 500
 export const bold = 700
