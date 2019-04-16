@@ -13,6 +13,9 @@ storiesOf('ButtonOutline', module)
       <ButtonOutline type="success" mr={2}>
         Success
       </ButtonOutline>
+      <ButtonOutline type="danger" mr={2}>
+        Danger
+      </ButtonOutline>
       <ButtonOutline type="error" mr={2}>
         Error
       </ButtonOutline>

@@ -23,6 +23,10 @@ const type = props => {
       return {
         color: props.theme.colors.danger
       }
+    case 'error':
+      return {
+        color: props.theme.colors.error
+      }
     default:
       return {
         color: props.theme.colors.primary
@@ -32,7 +36,16 @@ const type = props => {
 
 const ButtonGhost = styled(ButtonOutline)`
   background: ${theme.colors.white};
-  border: ${props => `2px solid ${props.type.color}`};
+  border: none;
+  &:hover {
+    color: ${props =>
+      props.disabled
+        ? null
+        : darken(
+            0.075,
+            props.type ? theme.colors[props.type] : theme.colors.gray
+          )};
+  }
   ${type}
 `
 

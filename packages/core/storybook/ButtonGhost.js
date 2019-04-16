@@ -16,6 +16,9 @@ storiesOf('ButtonGhost', module)
       <ButtonGhost type="danger" mr={2}>
         Danger
       </ButtonGhost>
+      <ButtonGhost type="error" mr={2}>
+        Error
+      </ButtonGhost>
     </div>
   ))
   .add('sizes', () => (
