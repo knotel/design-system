@@ -1,9 +1,8 @@
 import React from 'react'
 import IconButton from './IconButton'
 import PropTypes from 'prop-types'
-import theme from './theme'
 
-const CloseButton = props => <IconButton {...props} name="close" />
+const CloseButton = props => <IconButton {...props} name="Close" />
 
 CloseButton.defaultProps = {
   size: 24,
