@@ -1,6 +1,7 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { withInfo } from '@storybook/addon-info'
+import { action } from '@storybook/addon-actions'
 import { Box, ToggleBadge } from '../src'
 
 storiesOf('ToggleBadge', module).add(
@@ -14,13 +15,13 @@ storiesOf('ToggleBadge', module).add(
         id="item1"
         label="On"
         selected={true}
-        onChange={e => console.log(e.target)}
+        onChange={action('e')}
       />
       <ToggleBadge
         id="item2"
         label="Off"
         selected={false}
-        onChange={e => console.log(e.target)}
+        onChange={action('e')}
       />
     </Box>
   ))
