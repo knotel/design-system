@@ -1,13 +1,29 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 import { themeGet, space, fontSize } from 'styled-system'
+import { darken } from 'polished'
 import theme from './theme'
+import Box from './Box'
 
-const ToggleBadge = styled.button`
-  border-radius: ${props => props.theme.radius};
-  border: 0;
+const ToggleBadge = props => {
+  const { selected, disabled, label } = props
+  return (
+    <ToggleBadgeWrapper selected={selected} disabled={disabled}>
+      <label>
+        {label}
+        <StyledInput type="checkbox" {...props} />
+      </label>
+    </ToggleBadgeWrapper>
+  )
+}
+
+const ToggleBadgeWrapper = styled(Box)`
   display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  border-radius: 99999px;
   font-weight: ${props => props.theme.bold};
   font-family: inherit;
   cursor: pointer;
@@ -16,29 +32,39 @@ const ToggleBadge = styled.button`
   color: ${props => props.theme.colors[props.color]};
   ${space} ${fontSize};
   &:hover {
-    background-color: ${props => props.theme.colors[props.bg]};
+    background-color: ${props => darken(0.075, props.theme.colors[props.bg])};
   }
 `
 
-ToggleBadge.displayName = 'ToggleBadge'
-
-ToggleBadge.propTypes = {
-  selected: PropTypes.bool,
-  ...space.propTypes,
-  ...fontSize.propTypes
-}
-
-ToggleBadge.defaultProps = {
-  selected: false,
+ToggleBadgeWrapper.defaultProps = {
   px: 2,
   py: 1,
   mx: 1,
   my: 1,
   fontSize: 0,
-  theme: theme,
+  theme,
   color: 'blue',
   bg: 'lightBlue',
   unSelectedBg: 'transparent'
+}
+
+const StyledInput = styled.input`
+  appearance: none;
+  opacity: 1;
+  background: red;
+  position: absolute;
+  z-index: 999;
+`
+
+ToggleBadge.displayName = 'ToggleBadge'
+
+ToggleBadge.propTypes = {
+  id: PropTypes.string.isRequired,
+  onChange: PropTypes.func,
+  unSelectedBg: PropTypes.string,
+  selected: PropTypes.bool,
+  ...space.propTypes,
+  ...fontSize.propTypes
 }
 
 export default ToggleBadge
