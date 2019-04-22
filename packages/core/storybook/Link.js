@@ -2,6 +2,7 @@ import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { Link } from '../src'
 
+const downloadable = './Link.js'
 storiesOf('Link', module)
   .add('Link component', () => (
     <Link href="https://www.priceline.com/home/" target="_blank">
@@ -14,3 +15,8 @@ storiesOf('Link', module)
     </Link>
   ))
   .add('Color', () => <Link color="darkGray">I'm a different color!</Link>)
+  .add('Download', () => (
+    <Link href={downloadable} download>
+      Download me!
+    </Link>
+  ))
