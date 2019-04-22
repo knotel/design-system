@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled, { css } from 'styled-components'
-import { themeGet, space, fontSize } from 'styled-system'
+import { space, fontSize } from 'styled-system'
 import { darken } from 'polished'
 import theme from './theme'
 import Box from './Box'
