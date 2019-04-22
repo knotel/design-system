@@ -1,7 +1,7 @@
 {
   "name": "knotel-dropdown",
   "version": "0.0.1",
-  "description": "React component for dropdown",
+  "description": "React component for Dropdown",
   "main": "dist/index.js",
   "scripts": {
     "test": "jest",
@@ -11,7 +11,6 @@
   "author": "Knotel",
   "license": "MIT",
   "dependencies": {
-    "@reach/menu-button": "^0.1.2",
     "react-transition-group": "^2.5.3"
   },
   "peerDependencies": {
