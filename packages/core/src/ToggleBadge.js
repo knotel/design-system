@@ -7,16 +7,20 @@ import theme from './theme'
 import Box from './Box'
 
 const ToggleBadge = props => {
-  const { selected, disabled, label } = props
+  const { selected, disabled, label, bg, color } = props
   return (
-    <ToggleBadgeWrapper selected={selected} disabled={disabled}>
-      <label>
+    <ToggleBadgeWrapper bg={bg} selected={selected} disabled={disabled}>
+      <ToggleLabel color={color}>
         {label}
         <StyledInput type="checkbox" {...props} />
-      </label>
+      </ToggleLabel>
     </ToggleBadgeWrapper>
   )
 }
+
+const ToggleLabel = styled.label`
+  color: ${props => props.theme.colors[props.color]};
+`
 
 const ToggleBadgeWrapper = styled(Box)`
   display: inline-block;
