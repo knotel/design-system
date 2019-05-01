@@ -1,5 +1,5 @@
 {
-  "name": "pcln-design-system",
+  "name": "@knotel/cinderblock",
   "version": "2.0.5",
   "description": "Priceline Design System",
   "main": "dist/index.cjs.js",
