@@ -1,14 +1,14 @@
 // theme for mdx-docs components
 import { theme } from 'pcln-design-system'
 
-const { colors, fontSizes } = theme
+const { space, colors, fontSizes, fontWeights } = theme
 
-const { blue, gray50 } = colors
+const { blue, lightGray, borderGray } = colors
 
 const monospace = '"Roboto Mono", Menlo, monospace'
 
 export default {
-  font: 'Halyard Text, Montserrat, sans-serif',
+  font: 'Montserrat, sans-serif',
   lineHeight: 1.6,
   code: {
     fontFamily: monospace,
@@ -20,21 +20,23 @@ export default {
     fontSize: '14px',
     padding: '16px',
     color: blue,
-    backgroundColor: gray50,
+    backgroundColor: lightGray,
     borderRadius: '2px'
   },
   LayoutSidebar: {
-    backgroundColor: gray50
+    backgroundColor: lightGray
   },
   LayoutContainer: {
     paddingBottom: '128px'
   },
+
   MenuButton: {
     padding: '8px',
     color: blue
   },
+
   LiveCode: {
-    border: `1px solid ${gray50}`,
+    border: `1px solid ${lightGray}`,
     borderRadius: '2px',
     marginBottom: '32px'
   },
@@ -47,7 +49,7 @@ export default {
     padding: '16px',
     overflowX: 'auto',
     color: blue,
-    backgroundColor: gray50
+    backgroundColor: lightGray
   },
 
   PaginationLink: {

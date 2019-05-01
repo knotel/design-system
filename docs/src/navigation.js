@@ -37,6 +37,7 @@ export default [
       { name: 'Label', path: '/Label' },
       { name: 'Link', path: '/Link' },
       { name: 'Radio', path: '/Radio' },
+      { name: 'RatingBadge', path: '/RatingBadge' },
       { name: 'Relative', path: '/Relative' },
       { name: 'Select', path: '/Select' },
       { name: 'Slider', path: '/Slider' },

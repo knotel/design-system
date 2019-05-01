@@ -1,9 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`Relative renders with flag and Child 1`] = `[Function]`;
-
-exports[`Relative renders with top, left and zIndex props 1`] = `
-<div
-  className="hVHQag"
-/>
-`;
