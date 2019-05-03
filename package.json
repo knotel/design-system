@@ -1,6 +1,20 @@
 {
 	"name": "@knotel/cinderblock",
-	"version": "0.1.0",
+  "version": "0.1.0",
+  "scripts": {
+    "precommit": "lint-staged",
+    "prepare": "lerna bootstrap --hoist",
+    "clean": "lerna run clean",
+    "changed": "lerna changed",
+    "diff": "lerna diff",
+    "publish": "lerna publish",
+    "test": "jest",
+    "coverage": "jest --coverage",
+    "codecov": "npx codecov",
+    "start": "start-storybook -p 8000 -c .storybook",
+    "storybook": "build-storybook -c .storybook -o docs/out/storybook",
+    "deploy:storybook": "storybook-to-ghpages"
+  },
 	"devDependencies": {
 		"@babel/core": "^7.3.3",
 		"@babel/plugin-proposal-class-properties": "^7.3.3",
