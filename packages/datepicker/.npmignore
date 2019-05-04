@@ -1,0 +1,10 @@
+src
+storybook
+docs
+test
+icons
+coverage
+scripts
+.site
+.storybook
+.travis.yml

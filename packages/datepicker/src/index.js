@@ -3,25 +3,23 @@ import {
   DateRangePicker,
   SingleDatePicker,
   DayPickerRangeController
-} from 'react-dates'
+} from 'react-dates/initialize'
 import { space, color, themeGet } from 'styled-system'
 
 export const Datepicker = styled(SingleDatePicker)`
   ${space} ${color} 
 
   .CalendarDay__selected_span {
-    background: #82e0aa; //background
-    color: white; //text
-    border: 1px solid ${themeGet('colors.alphablue')}; //default styles include a border
+    background: #82e0aa;
+    color: white;
+    border: 1px solid ${themeGet('colors.alphablue')};
   }
 
-  // Will edit selected date or the endpoints of a range of dates
   .CalendarDay__selected {
     background: ${themeGet('colors.alphablue')};
     color: white;
   }
 
-  // Will edit when hovered over. _span style also has this property
   .CalendarDay__selected:hover {
     background: ${themeGet('colors.alphablue')};
     color: white;
