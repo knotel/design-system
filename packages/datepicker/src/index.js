@@ -6,7 +6,7 @@ import {
 } from 'react-dates'
 import { space, color, themeGet } from 'styled-system'
 
-export const Datepicker = styled(DateRangePicker)`
+export const Datepicker = styled(SingleDatePicker)`
   ${space} ${color} 
 
   .CalendarDay__selected_span {
