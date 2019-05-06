@@ -14,23 +14,23 @@
     "react-tabs": "^3.0.0"
   },
   "peerDependencies": {
-    "pcln-design-system": "^1.0.1",
+    "pcln-design-system": "^2.0.4",
     "prop-types": ">=15.0.0",
     "styled-components": ">=2.0.0 || >=3.0.0 || >=4.0.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.2.3",
     "@babel/core": "^7.3.3",
-    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-env": "^7.3.1",
     "@babel/preset-react": "^7.0.0",
     "@reach/component-component": "^0.1.1",
     "babel-core": "^7.0.0-bridge.0",
     "cat-names": "^2.0.0",
     "enzyme-theme-utils": "^2.0.1",
-    "jest": "^23.6.0",
+    "jest": "^24.1.0",
     "jest-styled-components": "^6.2.1",
-    "pcln-design-system": "^1.0.1",
-    "prop-types": "^15.6.2",
+    "pcln-design-system": "^2.0.4",
+    "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-test-renderer": "^16.8.6",
