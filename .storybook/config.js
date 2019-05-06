@@ -1,16 +1,14 @@
 import React from 'react'
 import { configure, addDecorator } from '@storybook/react'
-import { withKnobs } from '@storybook/addon-knobs'
-import { createGlobalStyle } from 'styled-components'
-import { ThemeProviderBase as ThemeProvider, Box } from '../src'
+import { injectGlobal } from 'styled-components'
+import { ThemeProvider, Box } from '../packages/core/src'
 
-createGlobalStyle([], {
+injectGlobal([], {
   '*': {
     boxSizing: 'border-box'
   },
   body: {
     lineHeight: 1.5,
-    fontFamily: 'Open Sans',
     margin: 0
   }
 })
@@ -21,12 +19,12 @@ addDecorator(story => (
   </ThemeProvider>
 ))
 
-addDecorator(withKnobs)
-
-const req = require.context('.', true, /\.js$/)
+const req = require.context('../packages', true, /storybook\/[\w\d\s]+\.js$/)
 
 const load = () => {
-  req.keys().forEach(req)
+  req.keys().forEach(key => {
+    req(key)
+  })
 }
 
 configure(load, module)

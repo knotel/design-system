@@ -1,20 +1,20 @@
 {
 	"name": "@knotel/cinderblock",
-  "version": "0.1.0",
-  "scripts": {
-    "precommit": "lint-staged",
-    "prepare": "lerna bootstrap --hoist",
-    "clean": "lerna run clean",
-    "changed": "lerna changed",
-    "diff": "lerna diff",
-    "publish": "lerna publish",
-    "test": "jest",
-    "coverage": "jest --coverage",
-    "codecov": "npx codecov",
-    "start": "start-storybook -p 8000 -c .storybook",
-    "storybook": "build-storybook -c .storybook -o docs/out/storybook",
-    "deploy:storybook": "storybook-to-ghpages"
-  },
+	"version": "0.1.1",
+	"scripts": {
+		"precommit": "lint-staged",
+		"prepare": "lerna bootstrap --hoist",
+		"clean": "lerna run clean",
+		"changed": "lerna changed",
+		"diff": "lerna diff",
+		"publish": "lerna publish",
+		"test": "jest",
+		"coverage": "jest --coverage",
+		"codecov": "npx codecov",
+		"start": "start-storybook -p 8000 -c .storybook",
+		"storybook": "build-storybook -c .storybook -o docs/out/storybook",
+		"deploy:storybook": "storybook-to-ghpages"
+	},
 	"devDependencies": {
 		"@babel/core": "^7.3.3",
 		"@babel/plugin-proposal-class-properties": "^7.3.3",
@@ -85,27 +85,5 @@
 	"bugs": {
 		"url": "https://github.com/knotel/cinderblock/issues"
 	},
-	"homepage": "https://knotel.github.io/cinderblock",
-	"dependencies": {
-		"@babel/cli": "^7.2.3",
-		"@reach/component-component": "^0.1.1",
-		"@reach/dialog": "^0.1.2",
-		"@svgr/cli": "^4.1.0",
-		"camelcase": "^5.0.0",
-		"cat-names": "^2.0.0",
-		"downshift": "^3.2.6",
-		"enzyme-theme-utils": "^2.0.1",
-		"lodash.upperfirst": "^4.3.1",
-		"pcln-design-system": "^1.0.1",
-		"polished": "^3.2.0",
-		"prop-types": "^15.7.2",
-		"rc-slider": "^8.6.3",
-		"react-collapsible": "^2.6.0",
-		"react-swipeable": "4.3.0",
-		"react-test-renderer": "^16.8.6",
-		"react-transition-group": "^2.5.3",
-		"styled-system": "^3.2.1",
-		"stylis": "^3.4.9",
-		"us": "^2.0.0"
-	}
+	"homepage": "https://knotel.github.io/cinderblock"
 }
